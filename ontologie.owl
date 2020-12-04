@@ -1,0 +1,1091 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.siteCommerce.com"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.siteCommerce.com">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Accessoire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aliment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bijouxdecorps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bijouxpiercing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bjouxdetete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boisson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bracelet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Casque"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clavier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Client"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commande"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Compte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cosmetique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Couleur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ecran"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electronique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruit_de_mer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruit_frais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruit_sec"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gammebijoux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jupe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Legume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LigneCommande"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Limonade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Micro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Montrebracelet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ordinateur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PC-Bureau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PC-Portable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Panier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pantalon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parfumerie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Periphérique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produit_capillaire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produit_cosmétique_poue_femme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produit_cosmétique_poue_homme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produit_pour_la_peau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rayondebijouterie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Robe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Short"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SiteEcommerce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Souris"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#T-shirt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tissu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tout-en-un"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tricot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vetement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vetement_pour_femme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vetement_pour_homme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#collier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boucled&apos;oreille"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produit_d&apos;hygiène"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Associé"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Contient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Regroupé-selon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ajoute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#article"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compte"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ligne"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#panier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#passe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ModeLivraison"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ModePayement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#adresseLivraison"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#caracteristique"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#categorie"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#colliD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#couleur"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date_expiration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#libelle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#marque"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#montant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#motDePasse"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#prenom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#prix"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#pu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quantite"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statut"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Accessoire"/>
+        <Class IRI="#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aliment"/>
+        <Class IRI="#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bague"/>
+        <Class IRI="#Bijouxdecorps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bijouxdecorps"/>
+        <Class IRI="#Rayondebijouterie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bijouxpiercing"/>
+        <Class IRI="#Bjouxdetete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bjouxdetete"/>
+        <Class IRI="#Rayondebijouterie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boisson"/>
+        <Class IRI="#Aliment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bracelet"/>
+        <Class IRI="#Bijouxdecorps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broche"/>
+        <Class IRI="#Bijouxdecorps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Casque"/>
+        <Class IRI="#Periphérique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chemise"/>
+        <Class IRI="#Vetement_pour_femme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chemise"/>
+        <Class IRI="#Vetement_pour_homme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clavier"/>
+        <Class IRI="#Periphérique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cosmetique"/>
+        <Class IRI="#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Couleur"/>
+        <Class IRI="#Rayondebijouterie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecran"/>
+        <Class IRI="#Periphérique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electronique"/>
+        <Class IRI="#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruit"/>
+        <Class IRI="#Aliment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruit_de_mer"/>
+        <Class IRI="#Fruit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruit_frais"/>
+        <Class IRI="#Fruit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fruit_sec"/>
+        <Class IRI="#Fruit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gammebijoux"/>
+        <Class IRI="#Bracelet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jupe"/>
+        <Class IRI="#Vetement_pour_femme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jus"/>
+        <Class IRI="#Boisson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Legume"/>
+        <Class IRI="#Aliment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Limonade"/>
+        <Class IRI="#Boisson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Micro"/>
+        <Class IRI="#Periphérique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Montrebracelet"/>
+        <Class IRI="#Bijouxdecorps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ordinateur"/>
+        <Class IRI="#Electronique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PC-Bureau"/>
+        <Class IRI="#Ordinateur"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PC-Portable"/>
+        <Class IRI="#Ordinateur"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pantalon"/>
+        <Class IRI="#Vetement_pour_femme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pantalon"/>
+        <Class IRI="#Vetement_pour_homme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parfumerie"/>
+        <Class IRI="#Produit_cosmétique_poue_femme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parfumerie"/>
+        <Class IRI="#Produit_cosmétique_poue_homme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Periphérique"/>
+        <Class IRI="#Electronique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produit_capillaire"/>
+        <Class IRI="#Produit_cosmétique_poue_femme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produit_capillaire"/>
+        <Class IRI="#Produit_cosmétique_poue_homme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produit_cosmétique_poue_femme"/>
+        <Class IRI="#Cosmetique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produit_cosmétique_poue_homme"/>
+        <Class IRI="#Cosmetique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produit_pour_la_peau"/>
+        <Class IRI="#Produit_cosmétique_poue_femme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produit_pour_la_peau"/>
+        <Class IRI="#Produit_cosmétique_poue_homme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rayondebijouterie"/>
+        <Class IRI="#Accessoire"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Robe"/>
+        <Class IRI="#Vetement_pour_femme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Short"/>
+        <Class IRI="#Vetement_pour_homme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Souris"/>
+        <Class IRI="#Periphérique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#T-shirt"/>
+        <Class IRI="#Vetement_pour_homme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tissu"/>
+        <Class IRI="#Rayondebijouterie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tout-en-un"/>
+        <Class IRI="#PC-Bureau"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tricot"/>
+        <Class IRI="#Vetement_pour_femme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UC"/>
+        <Class IRI="#PC-Bureau"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vetement"/>
+        <Class IRI="#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vetement_pour_femme"/>
+        <Class IRI="#Vetement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vetement_pour_homme"/>
+        <Class IRI="#Vetement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#collier"/>
+        <Class IRI="#Bjouxdetete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boucled&apos;oreille"/>
+        <Class IRI="#Bjouxdetete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produit_d&apos;hygiène"/>
+        <Class IRI="#Produit_cosmétique_poue_femme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produit_d&apos;hygiène"/>
+        <Class IRI="#Produit_cosmétique_poue_homme"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Accessoire"/>
+        <Class IRI="#Aliment"/>
+        <Class IRI="#Cosmetique"/>
+        <Class IRI="#Electronique"/>
+        <Class IRI="#Vetement"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Article"/>
+        <Class IRI="#Client"/>
+        <Class IRI="#Commande"/>
+        <Class IRI="#Compte"/>
+        <Class IRI="#LigneCommande"/>
+        <Class IRI="#Panier"/>
+        <Class IRI="#SiteEcommerce"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bague"/>
+        <Class IRI="#Bracelet"/>
+        <Class IRI="#Broche"/>
+        <Class IRI="#Montrebracelet"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bijouxdecorps"/>
+        <Class IRI="#Bjouxdetete"/>
+        <Class IRI="#Couleur"/>
+        <Class IRI="#Tissu"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bijouxpiercing"/>
+        <Class IRI="#collier"/>
+        <Class IRI="#Boucled&apos;oreille"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Boisson"/>
+        <Class IRI="#Fruit"/>
+        <Class IRI="#Legume"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Casque"/>
+        <Class IRI="#Clavier"/>
+        <Class IRI="#Micro"/>
+        <Class IRI="#Souris"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Chemise"/>
+        <Class IRI="#Jupe"/>
+        <Class IRI="#Pantalon"/>
+        <Class IRI="#Robe"/>
+        <Class IRI="#Tricot"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Chemise"/>
+        <Class IRI="#Pantalon"/>
+        <Class IRI="#Short"/>
+        <Class IRI="#T-shirt"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fruit_de_mer"/>
+        <Class IRI="#Fruit_frais"/>
+        <Class IRI="#Fruit_sec"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Jus"/>
+        <Class IRI="#Limonade"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ordinateur"/>
+        <Class IRI="#Periphérique"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PC-Bureau"/>
+        <Class IRI="#PC-Portable"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Parfumerie"/>
+        <Class IRI="#Produit_capillaire"/>
+        <Class IRI="#Produit_pour_la_peau"/>
+        <Class IRI="#Produit_d&apos;hygiène"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Produit_cosmétique_poue_femme"/>
+        <Class IRI="#Produit_cosmétique_poue_homme"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Tout-en-un"/>
+        <Class IRI="#UC"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Vetement_pour_femme"/>
+        <Class IRI="#Vetement_pour_homme"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Associé"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Contient"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Regroupé-selon"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ajoute"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#passe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Regroupé-selon"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#ajoute"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#article"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#compose"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#compte"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#ligne"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#panier"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#passe"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Associé"/>
+        <Class IRI="#Bracelet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Regroupé-selon"/>
+        <Class IRI="#collier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Regroupé-selon"/>
+        <Class IRI="#Boucled&apos;oreille"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ajoute"/>
+        <Class IRI="#Client"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#article"/>
+        <Class IRI="#SiteEcommerce"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compose"/>
+        <Class IRI="#Tout-en-un"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#compte"/>
+        <Class IRI="#Client"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ligne"/>
+        <Class IRI="#Panier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#panier"/>
+        <Class IRI="#Compte"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#passe"/>
+        <Class IRI="#Commande"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Associé"/>
+        <Class IRI="#Boucled&apos;oreille"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Regroupé-selon"/>
+        <Class IRI="#Couleur"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Regroupé-selon"/>
+        <Class IRI="#Tissu"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ajoute"/>
+        <Class IRI="#Commande"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#article"/>
+        <Class IRI="#Article"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compose"/>
+        <Class IRI="#Clavier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compose"/>
+        <Class IRI="#Ecran"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compose"/>
+        <Class IRI="#Souris"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#compte"/>
+        <Class IRI="#Compte"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ligne"/>
+        <Class IRI="#LigneCommande"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#panier"/>
+        <Class IRI="#Panier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#passe"/>
+        <Class IRI="#Client"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ModeLivraison"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ModePayement"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#adresseLivraison"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#caracteristique"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#categorie"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#colliD"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#couleur"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#date"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#date_expiration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#description"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#email"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#id"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#libelle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#marque"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#montant"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#motDePasse"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nom"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#prenom"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#prix"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pt"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#pu"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#quantite"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#statut"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#type"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#url"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ModeLivraison"/>
+        <Class IRI="#Commande"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ModePayement"/>
+        <Class IRI="#Commande"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#adresseLivraison"/>
+        <Class IRI="#Commande"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#categorie"/>
+        <Class IRI="#Bijouxpiercing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#couleur"/>
+        <Class IRI="#Vetement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date"/>
+        <Class IRI="#Commande"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date_expiration"/>
+        <Class IRI="#Boisson"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <Class IRI="#Bijouxdecorps"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#Compte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Commande"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Compte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#libelle"/>
+        <Class IRI="#Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#libelle"/>
+        <Class IRI="#LigneCommande"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#marque"/>
+        <Class IRI="#Cosmetique"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#marque"/>
+        <Class IRI="#Ordinateur"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#marque"/>
+        <Class IRI="#Periphérique"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#montant"/>
+        <Class IRI="#Panier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#motDePasse"/>
+        <Class IRI="#Client"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Bijouxdecorps"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Bjouxdetete"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nom"/>
+        <Class IRI="#Client"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#prenom"/>
+        <Class IRI="#Client"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#prix"/>
+        <Class IRI="#Article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pt"/>
+        <Class IRI="#LigneCommande"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#pu"/>
+        <Class IRI="#LigneCommande"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quantite"/>
+        <Class IRI="#LigneCommande"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tel"/>
+        <Class IRI="#Compte"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#SiteEcommerce"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Vetement"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ModeLivraison"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ModePayement"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#adresseLivraison"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#categorie"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#couleur"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date_expiration"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#libelle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#marque"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#montant"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#motDePasse"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#prenom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#prix"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pt"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#pu"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quantite"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tel"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#url"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
