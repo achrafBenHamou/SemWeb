@@ -7,7 +7,7 @@
 
 ## first step
 ### setup a triplestore
-- create Dataset named 3a in jena feseki
+- create Dataset named "3a" in jena feseki
 - Define a ontolgie using "Protégé" and put it in the triplestore
 - Generate Data of postes agencies automatically from existing data sources
   https://datanova.laposte.fr/explore/dataset/laposte_poincont2/download/?format=csv&timezone=Europe/Berlin&lang=fr&use_labels_for_header=true&csv_separator=%3B
