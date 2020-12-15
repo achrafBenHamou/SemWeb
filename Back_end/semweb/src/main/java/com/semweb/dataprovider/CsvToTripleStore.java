@@ -29,7 +29,7 @@ public class CsvToTripleStore {
 	        String cvsSplitBy = ";";
 	        
 	    
-	        String ex =  "http://www.3a.com/";
+	        String ex =  "http://www.it4commerce.com/";
 	        String geo = "http://www.w3.org/2003/01/geo/wgs84_pos#/";
 	        String rdfs = "http://www.w3.org/2000/01/rdf-schema#" ;
 	        String xsd =  "http://www.w3.org/2001/XMLSchema#" ;	        	        
@@ -61,26 +61,16 @@ public class CsvToTripleStore {
 	                System.out.println("poste [poste_id= " + ligne[0] + " , poste_name=" + ligne[1] + " , poste_adresse=" + ligne[4] + " , poste_long=" + ligne[12]+" , poste_lat=" + ligne[12]+"]");
 	                
 	            }
-	            //System.out.println(model);
-	            
-	         // ... build the model
-	          
-	            
-	            
+      
 	            String datasetURL = "http://localhost:3030";
 	            String sparqlEndpoint = datasetURL + "/3a";
 	            String sparqlUpdate = datasetURL + "/update";
 	            String graphStore = datasetURL + "/data";
-	            //RDFConnection conneg = RDFConnectionFactory.connect(sparqlEndpoint,sparqlUpdate,graphStore);
-	            //conneg.load(model); // add the content of model to the triplestore
-	            //conneg.update("INSERT DATA { <test> a <TestClass> }"); // add the triple to the triplestore
-	            
 	            String serviceURL = "http://localhost:3030/3a/";
 	            try (RDFConnection conn = RDFConnectionFactory.connect(serviceURL)) {
 	                conn.put(model);
 	            }
-	            
-	          
+	            	          
 	            model.write(System.out,"Turtle");
 	        } catch (FileNotFoundException e) {
 	            e.printStackTrace();
