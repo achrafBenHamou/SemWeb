@@ -1,0 +1,722 @@
+Prefix(:=<http://www.IT4Commerce.com>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.IT4Commerce.com>
+
+Declaration(Class(<http://www.IT4Commerce.com#Accessoire>))
+Declaration(Class(<http://www.IT4Commerce.com#Adresse>))
+Declaration(Class(<http://www.IT4Commerce.com#AdresseAgenceLaPoste>))
+Declaration(Class(<http://www.IT4Commerce.com#AdresseLivraison>))
+Declaration(Class(<http://www.IT4Commerce.com#AgenceLa_Poste>))
+Declaration(Class(<http://www.IT4Commerce.com#Aliment>))
+Declaration(Class(<http://www.IT4Commerce.com#Article>))
+Declaration(Class(<http://www.IT4Commerce.com#Bague>))
+Declaration(Class(<http://www.IT4Commerce.com#Bijouxdecorps>))
+Declaration(Class(<http://www.IT4Commerce.com#Bijouxpiercing>))
+Declaration(Class(<http://www.IT4Commerce.com#Bjouxdetete>))
+Declaration(Class(<http://www.IT4Commerce.com#Boisson>))
+Declaration(Class(<http://www.IT4Commerce.com#Bracelet>))
+Declaration(Class(<http://www.IT4Commerce.com#Broche>))
+Declaration(Class(<http://www.IT4Commerce.com#Casque>))
+Declaration(Class(<http://www.IT4Commerce.com#Chemise>))
+Declaration(Class(<http://www.IT4Commerce.com#Clavier>))
+Declaration(Class(<http://www.IT4Commerce.com#Client>))
+Declaration(Class(<http://www.IT4Commerce.com#Commande>))
+Declaration(Class(<http://www.IT4Commerce.com#Compte>))
+Declaration(Class(<http://www.IT4Commerce.com#CompteClient>))
+Declaration(Class(<http://www.IT4Commerce.com#Cosmetique>))
+Declaration(Class(<http://www.IT4Commerce.com#Couleur>))
+Declaration(Class(<http://www.IT4Commerce.com#Date>))
+Declaration(Class(<http://www.IT4Commerce.com#DélaiLivraison>))
+Declaration(Class(<http://www.IT4Commerce.com#Ecran>))
+Declaration(Class(<http://www.IT4Commerce.com#Electronique>))
+Declaration(Class(<http://www.IT4Commerce.com#Email>))
+Declaration(Class(<http://www.IT4Commerce.com#EmailCompte>))
+Declaration(Class(<http://www.IT4Commerce.com#Fruit>))
+Declaration(Class(<http://www.IT4Commerce.com#Fruit_de_mer>))
+Declaration(Class(<http://www.IT4Commerce.com#Fruit_frais>))
+Declaration(Class(<http://www.IT4Commerce.com#Fruit_sec>))
+Declaration(Class(<http://www.IT4Commerce.com#Gammebijoux>))
+Declaration(Class(<http://www.IT4Commerce.com#ID>))
+Declaration(Class(<http://www.IT4Commerce.com#IDCommande>))
+Declaration(Class(<http://www.IT4Commerce.com#IDCompte>))
+Declaration(Class(<http://www.IT4Commerce.com#Jupe>))
+Declaration(Class(<http://www.IT4Commerce.com#Jus>))
+Declaration(Class(<http://www.IT4Commerce.com#Latitude>))
+Declaration(Class(<http://www.IT4Commerce.com#Legume>))
+Declaration(Class(<http://www.IT4Commerce.com#LigneCommande>))
+Declaration(Class(<http://www.IT4Commerce.com#Limonade>))
+Declaration(Class(<http://www.IT4Commerce.com#ListSouhait>))
+Declaration(Class(<http://www.IT4Commerce.com#Longitude>))
+Declaration(Class(<http://www.IT4Commerce.com#Micro>))
+Declaration(Class(<http://www.IT4Commerce.com#ModePaiement>))
+Declaration(Class(<http://www.IT4Commerce.com#MontantTotal>))
+Declaration(Class(<http://www.IT4Commerce.com#Montrebracelet>))
+Declaration(Class(<http://www.IT4Commerce.com#MotDePasse>))
+Declaration(Class(<http://www.IT4Commerce.com#Nom>))
+Declaration(Class(<http://www.IT4Commerce.com#NomAgenceLaPoste>))
+Declaration(Class(<http://www.IT4Commerce.com#Ordinateur>))
+Declaration(Class(<http://www.IT4Commerce.com#PC-Bureau>))
+Declaration(Class(<http://www.IT4Commerce.com#PC-Portable>))
+Declaration(Class(<http://www.IT4Commerce.com#Panier>))
+Declaration(Class(<http://www.IT4Commerce.com#Paniercompte>))
+Declaration(Class(<http://www.IT4Commerce.com#Pantalon>))
+Declaration(Class(<http://www.IT4Commerce.com#Parfumerie>))
+Declaration(Class(<http://www.IT4Commerce.com#Periphérique>))
+Declaration(Class(<http://www.IT4Commerce.com#Produit_capillaire>))
+Declaration(Class(<http://www.IT4Commerce.com#Produit_cosmétique_poue_femme>))
+Declaration(Class(<http://www.IT4Commerce.com#Produit_cosmétique_poue_homme>))
+Declaration(Class(<http://www.IT4Commerce.com#Produit_pour_la_peau>))
+Declaration(Class(<http://www.IT4Commerce.com#Prénom>))
+Declaration(Class(<http://www.IT4Commerce.com#Rayondebijouterie>))
+Declaration(Class(<http://www.IT4Commerce.com#Robe>))
+Declaration(Class(<http://www.IT4Commerce.com#Short>))
+Declaration(Class(<http://www.IT4Commerce.com#SiteEcommerce>))
+Declaration(Class(<http://www.IT4Commerce.com#Souris>))
+Declaration(Class(<http://www.IT4Commerce.com#T-shirt>))
+Declaration(Class(<http://www.IT4Commerce.com#Tel>))
+Declaration(Class(<http://www.IT4Commerce.com#Tissu>))
+Declaration(Class(<http://www.IT4Commerce.com#Tout-en-un>))
+Declaration(Class(<http://www.IT4Commerce.com#Tricot>))
+Declaration(Class(<http://www.IT4Commerce.com#UC>))
+Declaration(Class(<http://www.IT4Commerce.com#Vetement>))
+Declaration(Class(<http://www.IT4Commerce.com#Vetement_pour_femme>))
+Declaration(Class(<http://www.IT4Commerce.com#Vetement_pour_homme>))
+Declaration(Class(<http://www.IT4Commerce.com#Ville>))
+Declaration(Class(<http://www.IT4Commerce.com#collier>))
+Declaration(Class(<http://www.IT4Commerce.com#Boucled'oreille>))
+Declaration(Class(<http://www.IT4Commerce.com#Produit_d'hygiène>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#Associé>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#Contient>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#Regroupé-selon>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#ajoute>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#article>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#compose>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#compte>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#ligne>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#panier>))
+Declaration(ObjectProperty(<http://www.IT4Commerce.com#passe>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#ModeLivraison>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#ModePayement>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#adresseLivraison>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#caracteristique>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#categorie>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#colliD>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#couleur>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#date>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#date_expiration>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#description>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#email>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#id>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#libelle>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#marque>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#montant>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#motDePasse>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#name>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#nom>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#prenom>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#prix>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#pt>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#pu>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#quantite>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#statut>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#tel>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#type>))
+Declaration(DataProperty(<http://www.IT4Commerce.com#url>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.IT4Commerce.com#Associé> (<http://www.IT4Commerce.com#Associé>)
+
+SubObjectPropertyOf(<http://www.IT4Commerce.com#Associé> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#Associé> <http://www.IT4Commerce.com#Bracelet>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#Associé> <http://www.IT4Commerce.com#Boucled'oreille>)
+
+# Object Property: <http://www.IT4Commerce.com#Contient> (<http://www.IT4Commerce.com#Contient>)
+
+SubObjectPropertyOf(<http://www.IT4Commerce.com#Contient> owl:topObjectProperty)
+
+# Object Property: <http://www.IT4Commerce.com#Regroupé-selon> (<http://www.IT4Commerce.com#Regroupé-selon>)
+
+SubObjectPropertyOf(<http://www.IT4Commerce.com#Regroupé-selon> owl:topObjectProperty)
+AsymmetricObjectProperty(<http://www.IT4Commerce.com#Regroupé-selon>)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#Regroupé-selon> <http://www.IT4Commerce.com#collier>)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#Regroupé-selon> <http://www.IT4Commerce.com#Boucled'oreille>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#Regroupé-selon> <http://www.IT4Commerce.com#Couleur>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#Regroupé-selon> <http://www.IT4Commerce.com#Tissu>)
+
+# Object Property: <http://www.IT4Commerce.com#ajoute> (<http://www.IT4Commerce.com#ajoute>)
+
+SubObjectPropertyOf(<http://www.IT4Commerce.com#ajoute> owl:topObjectProperty)
+AsymmetricObjectProperty(<http://www.IT4Commerce.com#ajoute>)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#ajoute> <http://www.IT4Commerce.com#Client>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#ajoute> <http://www.IT4Commerce.com#Commande>)
+
+# Object Property: <http://www.IT4Commerce.com#article> (<http://www.IT4Commerce.com#article>)
+
+AsymmetricObjectProperty(<http://www.IT4Commerce.com#article>)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#article> <http://www.IT4Commerce.com#SiteEcommerce>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#article> <http://www.IT4Commerce.com#Article>)
+
+# Object Property: <http://www.IT4Commerce.com#compose> (<http://www.IT4Commerce.com#compose>)
+
+AsymmetricObjectProperty(<http://www.IT4Commerce.com#compose>)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#compose> <http://www.IT4Commerce.com#Tout-en-un>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#compose> <http://www.IT4Commerce.com#Clavier>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#compose> <http://www.IT4Commerce.com#Ecran>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#compose> <http://www.IT4Commerce.com#Souris>)
+
+# Object Property: <http://www.IT4Commerce.com#compte> (<http://www.IT4Commerce.com#compte>)
+
+AsymmetricObjectProperty(<http://www.IT4Commerce.com#compte>)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#compte> <http://www.IT4Commerce.com#Client>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#compte> <http://www.IT4Commerce.com#Compte>)
+
+# Object Property: <http://www.IT4Commerce.com#ligne> (<http://www.IT4Commerce.com#ligne>)
+
+AsymmetricObjectProperty(<http://www.IT4Commerce.com#ligne>)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#ligne> <http://www.IT4Commerce.com#Panier>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#ligne> <http://www.IT4Commerce.com#LigneCommande>)
+
+# Object Property: <http://www.IT4Commerce.com#panier> (<http://www.IT4Commerce.com#panier>)
+
+AsymmetricObjectProperty(<http://www.IT4Commerce.com#panier>)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#panier> <http://www.IT4Commerce.com#Compte>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#panier> <http://www.IT4Commerce.com#Panier>)
+
+# Object Property: <http://www.IT4Commerce.com#passe> (<http://www.IT4Commerce.com#passe>)
+
+SubObjectPropertyOf(<http://www.IT4Commerce.com#passe> owl:topObjectProperty)
+AsymmetricObjectProperty(<http://www.IT4Commerce.com#passe>)
+ObjectPropertyDomain(<http://www.IT4Commerce.com#passe> <http://www.IT4Commerce.com#Commande>)
+ObjectPropertyRange(<http://www.IT4Commerce.com#passe> <http://www.IT4Commerce.com#Client>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.IT4Commerce.com#ModeLivraison> (<http://www.IT4Commerce.com#ModeLivraison>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#ModeLivraison> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#ModeLivraison> <http://www.IT4Commerce.com#Commande>)
+DataPropertyRange(<http://www.IT4Commerce.com#ModeLivraison> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#ModePayement> (<http://www.IT4Commerce.com#ModePayement>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#ModePayement> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#ModePayement> <http://www.IT4Commerce.com#Commande>)
+DataPropertyRange(<http://www.IT4Commerce.com#ModePayement> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#adresseLivraison> (<http://www.IT4Commerce.com#adresseLivraison>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#adresseLivraison> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#adresseLivraison> <http://www.IT4Commerce.com#Commande>)
+DataPropertyRange(<http://www.IT4Commerce.com#adresseLivraison> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#caracteristique> (<http://www.IT4Commerce.com#caracteristique>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#caracteristique> owl:topDataProperty)
+
+# Data Property: <http://www.IT4Commerce.com#categorie> (<http://www.IT4Commerce.com#categorie>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#categorie> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#categorie> <http://www.IT4Commerce.com#Bijouxpiercing>)
+DataPropertyRange(<http://www.IT4Commerce.com#categorie> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#colliD> (<http://www.IT4Commerce.com#colliD>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#colliD> owl:topDataProperty)
+
+# Data Property: <http://www.IT4Commerce.com#couleur> (<http://www.IT4Commerce.com#couleur>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#couleur> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#couleur> <http://www.IT4Commerce.com#Vetement>)
+DataPropertyRange(<http://www.IT4Commerce.com#couleur> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#date> (<http://www.IT4Commerce.com#date>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#date> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#date> <http://www.IT4Commerce.com#Commande>)
+DataPropertyRange(<http://www.IT4Commerce.com#date> xsd:dateTime)
+
+# Data Property: <http://www.IT4Commerce.com#date_expiration> (<http://www.IT4Commerce.com#date_expiration>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#date_expiration> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#date_expiration> <http://www.IT4Commerce.com#Boisson>)
+DataPropertyRange(<http://www.IT4Commerce.com#date_expiration> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#description> (<http://www.IT4Commerce.com#description>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#description> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#description> <http://www.IT4Commerce.com#Article>)
+DataPropertyDomain(<http://www.IT4Commerce.com#description> <http://www.IT4Commerce.com#Bijouxdecorps>)
+DataPropertyRange(<http://www.IT4Commerce.com#description> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#email> (<http://www.IT4Commerce.com#email>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#email> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#email> <http://www.IT4Commerce.com#Compte>)
+DataPropertyRange(<http://www.IT4Commerce.com#email> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#id> (<http://www.IT4Commerce.com#id>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#id> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#id> <http://www.IT4Commerce.com#Article>)
+DataPropertyDomain(<http://www.IT4Commerce.com#id> <http://www.IT4Commerce.com#Commande>)
+DataPropertyDomain(<http://www.IT4Commerce.com#id> <http://www.IT4Commerce.com#Compte>)
+DataPropertyRange(<http://www.IT4Commerce.com#id> xsd:int)
+
+# Data Property: <http://www.IT4Commerce.com#libelle> (<http://www.IT4Commerce.com#libelle>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#libelle> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#libelle> <http://www.IT4Commerce.com#Article>)
+DataPropertyDomain(<http://www.IT4Commerce.com#libelle> <http://www.IT4Commerce.com#LigneCommande>)
+DataPropertyRange(<http://www.IT4Commerce.com#libelle> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#marque> (<http://www.IT4Commerce.com#marque>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#marque> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#marque> <http://www.IT4Commerce.com#Cosmetique>)
+DataPropertyDomain(<http://www.IT4Commerce.com#marque> <http://www.IT4Commerce.com#Ordinateur>)
+DataPropertyDomain(<http://www.IT4Commerce.com#marque> <http://www.IT4Commerce.com#Periphérique>)
+DataPropertyRange(<http://www.IT4Commerce.com#marque> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#montant> (<http://www.IT4Commerce.com#montant>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#montant> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#montant> <http://www.IT4Commerce.com#Panier>)
+DataPropertyRange(<http://www.IT4Commerce.com#montant> xsd:double)
+
+# Data Property: <http://www.IT4Commerce.com#motDePasse> (<http://www.IT4Commerce.com#motDePasse>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#motDePasse> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#motDePasse> <http://www.IT4Commerce.com#Client>)
+DataPropertyRange(<http://www.IT4Commerce.com#motDePasse> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#name> (<http://www.IT4Commerce.com#name>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#name> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#name> <http://www.IT4Commerce.com#Bijouxdecorps>)
+DataPropertyDomain(<http://www.IT4Commerce.com#name> <http://www.IT4Commerce.com#Bjouxdetete>)
+DataPropertyRange(<http://www.IT4Commerce.com#name> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#nom> (<http://www.IT4Commerce.com#nom>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#nom> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#nom> <http://www.IT4Commerce.com#Client>)
+DataPropertyRange(<http://www.IT4Commerce.com#nom> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#prenom> (<http://www.IT4Commerce.com#prenom>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#prenom> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#prenom> <http://www.IT4Commerce.com#Client>)
+DataPropertyRange(<http://www.IT4Commerce.com#prenom> xsd:string)
+
+# Data Property: <http://www.IT4Commerce.com#prix> (<http://www.IT4Commerce.com#prix>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#prix> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#prix> <http://www.IT4Commerce.com#Article>)
+DataPropertyRange(<http://www.IT4Commerce.com#prix> xsd:double)
+
+# Data Property: <http://www.IT4Commerce.com#pt> (<http://www.IT4Commerce.com#pt>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#pt> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#pt> <http://www.IT4Commerce.com#LigneCommande>)
+DataPropertyRange(<http://www.IT4Commerce.com#pt> xsd:double)
+
+# Data Property: <http://www.IT4Commerce.com#pu> (<http://www.IT4Commerce.com#pu>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#pu> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#pu> <http://www.IT4Commerce.com#LigneCommande>)
+DataPropertyRange(<http://www.IT4Commerce.com#pu> xsd:double)
+
+# Data Property: <http://www.IT4Commerce.com#quantite> (<http://www.IT4Commerce.com#quantite>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#quantite> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#quantite> <http://www.IT4Commerce.com#LigneCommande>)
+DataPropertyRange(<http://www.IT4Commerce.com#quantite> xsd:int)
+
+# Data Property: <http://www.IT4Commerce.com#statut> (<http://www.IT4Commerce.com#statut>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#statut> owl:topDataProperty)
+
+# Data Property: <http://www.IT4Commerce.com#tel> (<http://www.IT4Commerce.com#tel>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#tel> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#tel> <http://www.IT4Commerce.com#Compte>)
+DataPropertyRange(<http://www.IT4Commerce.com#tel> xsd:int)
+
+# Data Property: <http://www.IT4Commerce.com#type> (<http://www.IT4Commerce.com#type>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#type> owl:topDataProperty)
+
+# Data Property: <http://www.IT4Commerce.com#url> (<http://www.IT4Commerce.com#url>)
+
+SubDataPropertyOf(<http://www.IT4Commerce.com#url> owl:topDataProperty)
+DataPropertyDomain(<http://www.IT4Commerce.com#url> <http://www.IT4Commerce.com#SiteEcommerce>)
+DataPropertyRange(<http://www.IT4Commerce.com#url> xsd:string)
+
+# Data Property: owl:topDataProperty (owl:topDataProperty)
+
+DataPropertyDomain(owl:topDataProperty <http://www.IT4Commerce.com#Vetement>)
+DataPropertyRange(owl:topDataProperty xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.IT4Commerce.com#Accessoire> (<http://www.IT4Commerce.com#Accessoire>)
+
+SubClassOf(<http://www.IT4Commerce.com#Accessoire> <http://www.IT4Commerce.com#Article>)
+
+# Class: <http://www.IT4Commerce.com#Adresse> (<http://www.IT4Commerce.com#Adresse>)
+
+SubClassOf(<http://www.IT4Commerce.com#Adresse> <http://www.IT4Commerce.com#Client>)
+
+# Class: <http://www.IT4Commerce.com#AdresseAgenceLaPoste> (<http://www.IT4Commerce.com#AdresseAgenceLaPoste>)
+
+SubClassOf(<http://www.IT4Commerce.com#AdresseAgenceLaPoste> <http://www.IT4Commerce.com#AgenceLa_Poste>)
+
+# Class: <http://www.IT4Commerce.com#AdresseLivraison> (<http://www.IT4Commerce.com#AdresseLivraison>)
+
+SubClassOf(<http://www.IT4Commerce.com#AdresseLivraison> <http://www.IT4Commerce.com#Commande>)
+
+# Class: <http://www.IT4Commerce.com#Aliment> (<http://www.IT4Commerce.com#Aliment>)
+
+SubClassOf(<http://www.IT4Commerce.com#Aliment> <http://www.IT4Commerce.com#Article>)
+
+# Class: <http://www.IT4Commerce.com#Article> (<http://www.IT4Commerce.com#Article>)
+
+
+# Class: <http://www.IT4Commerce.com#Bague> (<http://www.IT4Commerce.com#Bague>)
+
+SubClassOf(<http://www.IT4Commerce.com#Bague> <http://www.IT4Commerce.com#Bijouxdecorps>)
+
+# Class: <http://www.IT4Commerce.com#Bijouxdecorps> (<http://www.IT4Commerce.com#Bijouxdecorps>)
+
+SubClassOf(<http://www.IT4Commerce.com#Bijouxdecorps> <http://www.IT4Commerce.com#Rayondebijouterie>)
+
+# Class: <http://www.IT4Commerce.com#Bijouxpiercing> (<http://www.IT4Commerce.com#Bijouxpiercing>)
+
+SubClassOf(<http://www.IT4Commerce.com#Bijouxpiercing> <http://www.IT4Commerce.com#Bjouxdetete>)
+
+# Class: <http://www.IT4Commerce.com#Bjouxdetete> (<http://www.IT4Commerce.com#Bjouxdetete>)
+
+SubClassOf(<http://www.IT4Commerce.com#Bjouxdetete> <http://www.IT4Commerce.com#Rayondebijouterie>)
+
+# Class: <http://www.IT4Commerce.com#Boisson> (<http://www.IT4Commerce.com#Boisson>)
+
+SubClassOf(<http://www.IT4Commerce.com#Boisson> <http://www.IT4Commerce.com#Aliment>)
+
+# Class: <http://www.IT4Commerce.com#Bracelet> (<http://www.IT4Commerce.com#Bracelet>)
+
+SubClassOf(<http://www.IT4Commerce.com#Bracelet> <http://www.IT4Commerce.com#Bijouxdecorps>)
+
+# Class: <http://www.IT4Commerce.com#Broche> (<http://www.IT4Commerce.com#Broche>)
+
+SubClassOf(<http://www.IT4Commerce.com#Broche> <http://www.IT4Commerce.com#Bijouxdecorps>)
+
+# Class: <http://www.IT4Commerce.com#Casque> (<http://www.IT4Commerce.com#Casque>)
+
+SubClassOf(<http://www.IT4Commerce.com#Casque> <http://www.IT4Commerce.com#Periphérique>)
+
+# Class: <http://www.IT4Commerce.com#Chemise> (<http://www.IT4Commerce.com#Chemise>)
+
+SubClassOf(<http://www.IT4Commerce.com#Chemise> <http://www.IT4Commerce.com#Vetement_pour_femme>)
+SubClassOf(<http://www.IT4Commerce.com#Chemise> <http://www.IT4Commerce.com#Vetement_pour_homme>)
+
+# Class: <http://www.IT4Commerce.com#Clavier> (<http://www.IT4Commerce.com#Clavier>)
+
+SubClassOf(<http://www.IT4Commerce.com#Clavier> <http://www.IT4Commerce.com#Periphérique>)
+
+# Class: <http://www.IT4Commerce.com#Client> (<http://www.IT4Commerce.com#Client>)
+
+
+# Class: <http://www.IT4Commerce.com#Commande> (<http://www.IT4Commerce.com#Commande>)
+
+
+# Class: <http://www.IT4Commerce.com#Compte> (<http://www.IT4Commerce.com#Compte>)
+
+
+# Class: <http://www.IT4Commerce.com#CompteClient> (<http://www.IT4Commerce.com#CompteClient>)
+
+SubClassOf(<http://www.IT4Commerce.com#CompteClient> <http://www.IT4Commerce.com#Client>)
+
+# Class: <http://www.IT4Commerce.com#Cosmetique> (<http://www.IT4Commerce.com#Cosmetique>)
+
+SubClassOf(<http://www.IT4Commerce.com#Cosmetique> <http://www.IT4Commerce.com#Article>)
+
+# Class: <http://www.IT4Commerce.com#Couleur> (<http://www.IT4Commerce.com#Couleur>)
+
+SubClassOf(<http://www.IT4Commerce.com#Couleur> <http://www.IT4Commerce.com#Rayondebijouterie>)
+
+# Class: <http://www.IT4Commerce.com#Date> (<http://www.IT4Commerce.com#Date>)
+
+SubClassOf(<http://www.IT4Commerce.com#Date> <http://www.IT4Commerce.com#Commande>)
+
+# Class: <http://www.IT4Commerce.com#DélaiLivraison> (<http://www.IT4Commerce.com#DélaiLivraison>)
+
+SubClassOf(<http://www.IT4Commerce.com#DélaiLivraison> <http://www.IT4Commerce.com#Commande>)
+
+# Class: <http://www.IT4Commerce.com#Ecran> (<http://www.IT4Commerce.com#Ecran>)
+
+SubClassOf(<http://www.IT4Commerce.com#Ecran> <http://www.IT4Commerce.com#Periphérique>)
+
+# Class: <http://www.IT4Commerce.com#Electronique> (<http://www.IT4Commerce.com#Electronique>)
+
+SubClassOf(<http://www.IT4Commerce.com#Electronique> <http://www.IT4Commerce.com#Article>)
+
+# Class: <http://www.IT4Commerce.com#Email> (<http://www.IT4Commerce.com#Email>)
+
+SubClassOf(<http://www.IT4Commerce.com#Email> <http://www.IT4Commerce.com#Client>)
+
+# Class: <http://www.IT4Commerce.com#EmailCompte> (<http://www.IT4Commerce.com#EmailCompte>)
+
+SubClassOf(<http://www.IT4Commerce.com#EmailCompte> <http://www.IT4Commerce.com#Compte>)
+
+# Class: <http://www.IT4Commerce.com#Fruit> (<http://www.IT4Commerce.com#Fruit>)
+
+SubClassOf(<http://www.IT4Commerce.com#Fruit> <http://www.IT4Commerce.com#Aliment>)
+
+# Class: <http://www.IT4Commerce.com#Fruit_de_mer> (<http://www.IT4Commerce.com#Fruit_de_mer>)
+
+SubClassOf(<http://www.IT4Commerce.com#Fruit_de_mer> <http://www.IT4Commerce.com#Fruit>)
+
+# Class: <http://www.IT4Commerce.com#Fruit_frais> (<http://www.IT4Commerce.com#Fruit_frais>)
+
+SubClassOf(<http://www.IT4Commerce.com#Fruit_frais> <http://www.IT4Commerce.com#Fruit>)
+
+# Class: <http://www.IT4Commerce.com#Fruit_sec> (<http://www.IT4Commerce.com#Fruit_sec>)
+
+SubClassOf(<http://www.IT4Commerce.com#Fruit_sec> <http://www.IT4Commerce.com#Fruit>)
+
+# Class: <http://www.IT4Commerce.com#Gammebijoux> (<http://www.IT4Commerce.com#Gammebijoux>)
+
+SubClassOf(<http://www.IT4Commerce.com#Gammebijoux> <http://www.IT4Commerce.com#Bracelet>)
+
+# Class: <http://www.IT4Commerce.com#ID> (<http://www.IT4Commerce.com#ID>)
+
+SubClassOf(<http://www.IT4Commerce.com#ID> <http://www.IT4Commerce.com#AgenceLa_Poste>)
+
+# Class: <http://www.IT4Commerce.com#IDCommande> (<http://www.IT4Commerce.com#IDCommande>)
+
+SubClassOf(<http://www.IT4Commerce.com#IDCommande> <http://www.IT4Commerce.com#Commande>)
+
+# Class: <http://www.IT4Commerce.com#IDCompte> (<http://www.IT4Commerce.com#IDCompte>)
+
+SubClassOf(<http://www.IT4Commerce.com#IDCompte> <http://www.IT4Commerce.com#Compte>)
+
+# Class: <http://www.IT4Commerce.com#Jupe> (<http://www.IT4Commerce.com#Jupe>)
+
+SubClassOf(<http://www.IT4Commerce.com#Jupe> <http://www.IT4Commerce.com#Vetement_pour_femme>)
+
+# Class: <http://www.IT4Commerce.com#Jus> (<http://www.IT4Commerce.com#Jus>)
+
+SubClassOf(<http://www.IT4Commerce.com#Jus> <http://www.IT4Commerce.com#Boisson>)
+DisjointClasses(<http://www.IT4Commerce.com#Jus> <http://www.IT4Commerce.com#Limonade>)
+
+# Class: <http://www.IT4Commerce.com#Latitude> (<http://www.IT4Commerce.com#Latitude>)
+
+SubClassOf(<http://www.IT4Commerce.com#Latitude> <http://www.IT4Commerce.com#AgenceLa_Poste>)
+
+# Class: <http://www.IT4Commerce.com#Legume> (<http://www.IT4Commerce.com#Legume>)
+
+SubClassOf(<http://www.IT4Commerce.com#Legume> <http://www.IT4Commerce.com#Aliment>)
+
+# Class: <http://www.IT4Commerce.com#LigneCommande> (<http://www.IT4Commerce.com#LigneCommande>)
+
+
+# Class: <http://www.IT4Commerce.com#Limonade> (<http://www.IT4Commerce.com#Limonade>)
+
+SubClassOf(<http://www.IT4Commerce.com#Limonade> <http://www.IT4Commerce.com#Boisson>)
+
+# Class: <http://www.IT4Commerce.com#ListSouhait> (<http://www.IT4Commerce.com#ListSouhait>)
+
+SubClassOf(<http://www.IT4Commerce.com#ListSouhait> <http://www.IT4Commerce.com#Compte>)
+
+# Class: <http://www.IT4Commerce.com#Longitude> (<http://www.IT4Commerce.com#Longitude>)
+
+SubClassOf(<http://www.IT4Commerce.com#Longitude> <http://www.IT4Commerce.com#AgenceLa_Poste>)
+
+# Class: <http://www.IT4Commerce.com#Micro> (<http://www.IT4Commerce.com#Micro>)
+
+SubClassOf(<http://www.IT4Commerce.com#Micro> <http://www.IT4Commerce.com#Periphérique>)
+
+# Class: <http://www.IT4Commerce.com#ModePaiement> (<http://www.IT4Commerce.com#ModePaiement>)
+
+SubClassOf(<http://www.IT4Commerce.com#ModePaiement> <http://www.IT4Commerce.com#Commande>)
+
+# Class: <http://www.IT4Commerce.com#MontantTotal> (<http://www.IT4Commerce.com#MontantTotal>)
+
+SubClassOf(<http://www.IT4Commerce.com#MontantTotal> <http://www.IT4Commerce.com#Commande>)
+
+# Class: <http://www.IT4Commerce.com#Montrebracelet> (<http://www.IT4Commerce.com#Montrebracelet>)
+
+SubClassOf(<http://www.IT4Commerce.com#Montrebracelet> <http://www.IT4Commerce.com#Bijouxdecorps>)
+
+# Class: <http://www.IT4Commerce.com#MotDePasse> (<http://www.IT4Commerce.com#MotDePasse>)
+
+SubClassOf(<http://www.IT4Commerce.com#MotDePasse> <http://www.IT4Commerce.com#Compte>)
+
+# Class: <http://www.IT4Commerce.com#Nom> (<http://www.IT4Commerce.com#Nom>)
+
+SubClassOf(<http://www.IT4Commerce.com#Nom> <http://www.IT4Commerce.com#Client>)
+
+# Class: <http://www.IT4Commerce.com#NomAgenceLaPoste> (<http://www.IT4Commerce.com#NomAgenceLaPoste>)
+
+SubClassOf(<http://www.IT4Commerce.com#NomAgenceLaPoste> <http://www.IT4Commerce.com#AgenceLa_Poste>)
+
+# Class: <http://www.IT4Commerce.com#Ordinateur> (<http://www.IT4Commerce.com#Ordinateur>)
+
+SubClassOf(<http://www.IT4Commerce.com#Ordinateur> <http://www.IT4Commerce.com#Electronique>)
+DisjointClasses(<http://www.IT4Commerce.com#Ordinateur> <http://www.IT4Commerce.com#Periphérique>)
+
+# Class: <http://www.IT4Commerce.com#PC-Bureau> (<http://www.IT4Commerce.com#PC-Bureau>)
+
+SubClassOf(<http://www.IT4Commerce.com#PC-Bureau> <http://www.IT4Commerce.com#Ordinateur>)
+DisjointClasses(<http://www.IT4Commerce.com#PC-Bureau> <http://www.IT4Commerce.com#PC-Portable>)
+
+# Class: <http://www.IT4Commerce.com#PC-Portable> (<http://www.IT4Commerce.com#PC-Portable>)
+
+SubClassOf(<http://www.IT4Commerce.com#PC-Portable> <http://www.IT4Commerce.com#Ordinateur>)
+
+# Class: <http://www.IT4Commerce.com#Panier> (<http://www.IT4Commerce.com#Panier>)
+
+
+# Class: <http://www.IT4Commerce.com#Paniercompte> (<http://www.IT4Commerce.com#Paniercompte>)
+
+SubClassOf(<http://www.IT4Commerce.com#Paniercompte> <http://www.IT4Commerce.com#Compte>)
+
+# Class: <http://www.IT4Commerce.com#Pantalon> (<http://www.IT4Commerce.com#Pantalon>)
+
+SubClassOf(<http://www.IT4Commerce.com#Pantalon> <http://www.IT4Commerce.com#Vetement_pour_femme>)
+SubClassOf(<http://www.IT4Commerce.com#Pantalon> <http://www.IT4Commerce.com#Vetement_pour_homme>)
+
+# Class: <http://www.IT4Commerce.com#Parfumerie> (<http://www.IT4Commerce.com#Parfumerie>)
+
+SubClassOf(<http://www.IT4Commerce.com#Parfumerie> <http://www.IT4Commerce.com#Produit_cosmétique_poue_femme>)
+SubClassOf(<http://www.IT4Commerce.com#Parfumerie> <http://www.IT4Commerce.com#Produit_cosmétique_poue_homme>)
+
+# Class: <http://www.IT4Commerce.com#Periphérique> (<http://www.IT4Commerce.com#Periphérique>)
+
+SubClassOf(<http://www.IT4Commerce.com#Periphérique> <http://www.IT4Commerce.com#Electronique>)
+
+# Class: <http://www.IT4Commerce.com#Produit_capillaire> (<http://www.IT4Commerce.com#Produit_capillaire>)
+
+SubClassOf(<http://www.IT4Commerce.com#Produit_capillaire> <http://www.IT4Commerce.com#Produit_cosmétique_poue_femme>)
+SubClassOf(<http://www.IT4Commerce.com#Produit_capillaire> <http://www.IT4Commerce.com#Produit_cosmétique_poue_homme>)
+
+# Class: <http://www.IT4Commerce.com#Produit_cosmétique_poue_femme> (<http://www.IT4Commerce.com#Produit_cosmétique_poue_femme>)
+
+SubClassOf(<http://www.IT4Commerce.com#Produit_cosmétique_poue_femme> <http://www.IT4Commerce.com#Cosmetique>)
+DisjointClasses(<http://www.IT4Commerce.com#Produit_cosmétique_poue_femme> <http://www.IT4Commerce.com#Produit_cosmétique_poue_homme>)
+
+# Class: <http://www.IT4Commerce.com#Produit_cosmétique_poue_homme> (<http://www.IT4Commerce.com#Produit_cosmétique_poue_homme>)
+
+SubClassOf(<http://www.IT4Commerce.com#Produit_cosmétique_poue_homme> <http://www.IT4Commerce.com#Cosmetique>)
+
+# Class: <http://www.IT4Commerce.com#Produit_pour_la_peau> (<http://www.IT4Commerce.com#Produit_pour_la_peau>)
+
+SubClassOf(<http://www.IT4Commerce.com#Produit_pour_la_peau> <http://www.IT4Commerce.com#Produit_cosmétique_poue_femme>)
+SubClassOf(<http://www.IT4Commerce.com#Produit_pour_la_peau> <http://www.IT4Commerce.com#Produit_cosmétique_poue_homme>)
+
+# Class: <http://www.IT4Commerce.com#Prénom> (<http://www.IT4Commerce.com#Prénom>)
+
+SubClassOf(<http://www.IT4Commerce.com#Prénom> <http://www.IT4Commerce.com#Client>)
+
+# Class: <http://www.IT4Commerce.com#Rayondebijouterie> (<http://www.IT4Commerce.com#Rayondebijouterie>)
+
+SubClassOf(<http://www.IT4Commerce.com#Rayondebijouterie> <http://www.IT4Commerce.com#Accessoire>)
+
+# Class: <http://www.IT4Commerce.com#Robe> (<http://www.IT4Commerce.com#Robe>)
+
+SubClassOf(<http://www.IT4Commerce.com#Robe> <http://www.IT4Commerce.com#Vetement_pour_femme>)
+
+# Class: <http://www.IT4Commerce.com#Short> (<http://www.IT4Commerce.com#Short>)
+
+SubClassOf(<http://www.IT4Commerce.com#Short> <http://www.IT4Commerce.com#Vetement_pour_homme>)
+
+# Class: <http://www.IT4Commerce.com#SiteEcommerce> (<http://www.IT4Commerce.com#SiteEcommerce>)
+
+
+# Class: <http://www.IT4Commerce.com#Souris> (<http://www.IT4Commerce.com#Souris>)
+
+SubClassOf(<http://www.IT4Commerce.com#Souris> <http://www.IT4Commerce.com#Periphérique>)
+
+# Class: <http://www.IT4Commerce.com#T-shirt> (<http://www.IT4Commerce.com#T-shirt>)
+
+SubClassOf(<http://www.IT4Commerce.com#T-shirt> <http://www.IT4Commerce.com#Vetement_pour_homme>)
+
+# Class: <http://www.IT4Commerce.com#Tel> (<http://www.IT4Commerce.com#Tel>)
+
+SubClassOf(<http://www.IT4Commerce.com#Tel> <http://www.IT4Commerce.com#Compte>)
+
+# Class: <http://www.IT4Commerce.com#Tissu> (<http://www.IT4Commerce.com#Tissu>)
+
+SubClassOf(<http://www.IT4Commerce.com#Tissu> <http://www.IT4Commerce.com#Rayondebijouterie>)
+
+# Class: <http://www.IT4Commerce.com#Tout-en-un> (<http://www.IT4Commerce.com#Tout-en-un>)
+
+SubClassOf(<http://www.IT4Commerce.com#Tout-en-un> <http://www.IT4Commerce.com#PC-Bureau>)
+DisjointClasses(<http://www.IT4Commerce.com#Tout-en-un> <http://www.IT4Commerce.com#UC>)
+
+# Class: <http://www.IT4Commerce.com#Tricot> (<http://www.IT4Commerce.com#Tricot>)
+
+SubClassOf(<http://www.IT4Commerce.com#Tricot> <http://www.IT4Commerce.com#Vetement_pour_femme>)
+
+# Class: <http://www.IT4Commerce.com#UC> (<http://www.IT4Commerce.com#UC>)
+
+SubClassOf(<http://www.IT4Commerce.com#UC> <http://www.IT4Commerce.com#PC-Bureau>)
+
+# Class: <http://www.IT4Commerce.com#Vetement> (<http://www.IT4Commerce.com#Vetement>)
+
+SubClassOf(<http://www.IT4Commerce.com#Vetement> <http://www.IT4Commerce.com#Article>)
+
+# Class: <http://www.IT4Commerce.com#Vetement_pour_femme> (<http://www.IT4Commerce.com#Vetement_pour_femme>)
+
+SubClassOf(<http://www.IT4Commerce.com#Vetement_pour_femme> <http://www.IT4Commerce.com#Vetement>)
+DisjointClasses(<http://www.IT4Commerce.com#Vetement_pour_femme> <http://www.IT4Commerce.com#Vetement_pour_homme>)
+
+# Class: <http://www.IT4Commerce.com#Vetement_pour_homme> (<http://www.IT4Commerce.com#Vetement_pour_homme>)
+
+SubClassOf(<http://www.IT4Commerce.com#Vetement_pour_homme> <http://www.IT4Commerce.com#Vetement>)
+
+# Class: <http://www.IT4Commerce.com#Ville> (<http://www.IT4Commerce.com#Ville>)
+
+SubClassOf(<http://www.IT4Commerce.com#Ville> <http://www.IT4Commerce.com#AgenceLa_Poste>)
+
+# Class: <http://www.IT4Commerce.com#collier> (<http://www.IT4Commerce.com#collier>)
+
+SubClassOf(<http://www.IT4Commerce.com#collier> <http://www.IT4Commerce.com#Bjouxdetete>)
+
+# Class: <http://www.IT4Commerce.com#Boucled'oreille> (<http://www.IT4Commerce.com#Boucled'oreille>)
+
+SubClassOf(<http://www.IT4Commerce.com#Boucled'oreille> <http://www.IT4Commerce.com#Bjouxdetete>)
+
+# Class: <http://www.IT4Commerce.com#Produit_d'hygiène> (<http://www.IT4Commerce.com#Produit_d'hygiène>)
+
+SubClassOf(<http://www.IT4Commerce.com#Produit_d'hygiène> <http://www.IT4Commerce.com#Produit_cosmétique_poue_femme>)
+SubClassOf(<http://www.IT4Commerce.com#Produit_d'hygiène> <http://www.IT4Commerce.com#Produit_cosmétique_poue_homme>)
+
+
+DisjointClasses(<http://www.IT4Commerce.com#Accessoire> <http://www.IT4Commerce.com#Aliment> <http://www.IT4Commerce.com#Cosmetique> <http://www.IT4Commerce.com#Electronique> <http://www.IT4Commerce.com#Vetement>)
+DisjointClasses(<http://www.IT4Commerce.com#Article> <http://www.IT4Commerce.com#Client> <http://www.IT4Commerce.com#Commande> <http://www.IT4Commerce.com#Compte> <http://www.IT4Commerce.com#LigneCommande> <http://www.IT4Commerce.com#Panier> <http://www.IT4Commerce.com#SiteEcommerce>)
+DisjointClasses(<http://www.IT4Commerce.com#Bague> <http://www.IT4Commerce.com#Bracelet> <http://www.IT4Commerce.com#Broche> <http://www.IT4Commerce.com#Montrebracelet>)
+DisjointClasses(<http://www.IT4Commerce.com#Bijouxdecorps> <http://www.IT4Commerce.com#Bjouxdetete> <http://www.IT4Commerce.com#Couleur> <http://www.IT4Commerce.com#Tissu>)
+DisjointClasses(<http://www.IT4Commerce.com#Bijouxpiercing> <http://www.IT4Commerce.com#collier> <http://www.IT4Commerce.com#Boucled'oreille>)
+DisjointClasses(<http://www.IT4Commerce.com#Boisson> <http://www.IT4Commerce.com#Fruit> <http://www.IT4Commerce.com#Legume>)
+DisjointClasses(<http://www.IT4Commerce.com#Casque> <http://www.IT4Commerce.com#Clavier> <http://www.IT4Commerce.com#Micro> <http://www.IT4Commerce.com#Souris>)
+DisjointClasses(<http://www.IT4Commerce.com#Chemise> <http://www.IT4Commerce.com#Jupe> <http://www.IT4Commerce.com#Pantalon> <http://www.IT4Commerce.com#Robe> <http://www.IT4Commerce.com#Tricot>)
+DisjointClasses(<http://www.IT4Commerce.com#Chemise> <http://www.IT4Commerce.com#Pantalon> <http://www.IT4Commerce.com#Short> <http://www.IT4Commerce.com#T-shirt>)
+DisjointClasses(<http://www.IT4Commerce.com#Fruit_de_mer> <http://www.IT4Commerce.com#Fruit_frais> <http://www.IT4Commerce.com#Fruit_sec>)
+DisjointClasses(<http://www.IT4Commerce.com#Parfumerie> <http://www.IT4Commerce.com#Produit_capillaire> <http://www.IT4Commerce.com#Produit_pour_la_peau> <http://www.IT4Commerce.com#Produit_d'hygiène>)
+)

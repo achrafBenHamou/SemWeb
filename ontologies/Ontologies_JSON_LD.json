@@ -166,6 +166,27 @@
     "@id" : "http://www.IT4Commerce.com#Article"
   } ]
 }, {
+  "@id" : "http://www.IT4Commerce.com#Adresse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Client"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#AdresseAgenceLaPoste",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#AgenceLa_Poste"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#AdresseLivraison",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Commande"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#AgenceLa_Poste",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://www.IT4Commerce.com#Aliment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -264,6 +285,12 @@
   "@id" : "http://www.IT4Commerce.com#Compte",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://www.IT4Commerce.com#CompteClient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Client"
+  } ]
+}, {
   "@id" : "http://www.IT4Commerce.com#Contient",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
@@ -282,6 +309,18 @@
     "@id" : "http://www.IT4Commerce.com#Rayondebijouterie"
   } ]
 }, {
+  "@id" : "http://www.IT4Commerce.com#Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Commande"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#DélaiLivraison",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Commande"
+  } ]
+}, {
   "@id" : "http://www.IT4Commerce.com#Ecran",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -292,6 +331,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.IT4Commerce.com#Article"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#Email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Client"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#EmailCompte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Compte"
   } ]
 }, {
   "@id" : "http://www.IT4Commerce.com#Fruit",
@@ -324,6 +375,24 @@
     "@id" : "http://www.IT4Commerce.com#Bracelet"
   } ]
 }, {
+  "@id" : "http://www.IT4Commerce.com#ID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#AgenceLa_Poste"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#IDCommande",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Commande"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#IDCompte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Compte"
+  } ]
+}, {
   "@id" : "http://www.IT4Commerce.com#Jupe",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -339,6 +408,12 @@
     "@id" : "http://www.IT4Commerce.com#Limonade"
   } ]
 }, {
+  "@id" : "http://www.IT4Commerce.com#Latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#AgenceLa_Poste"
+  } ]
+}, {
   "@id" : "http://www.IT4Commerce.com#Legume",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -352,6 +427,18 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.IT4Commerce.com#Boisson"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#ListSouhait",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Compte"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#Longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#AgenceLa_Poste"
   } ]
 }, {
   "@id" : "http://www.IT4Commerce.com#Micro",
@@ -372,6 +459,12 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
+  "@id" : "http://www.IT4Commerce.com#ModePaiement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Commande"
+  } ]
+}, {
   "@id" : "http://www.IT4Commerce.com#ModePayement",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -384,10 +477,34 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
+  "@id" : "http://www.IT4Commerce.com#MontantTotal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Commande"
+  } ]
+}, {
   "@id" : "http://www.IT4Commerce.com#Montrebracelet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.IT4Commerce.com#Bijouxdecorps"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#MotDePasse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Compte"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#Nom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Client"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#NomAgenceLaPoste",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#AgenceLa_Poste"
   } ]
 }, {
   "@id" : "http://www.IT4Commerce.com#Ordinateur",
@@ -416,6 +533,12 @@
 }, {
   "@id" : "http://www.IT4Commerce.com#Panier",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#Paniercompte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Compte"
+  } ]
 }, {
   "@id" : "http://www.IT4Commerce.com#Pantalon",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -478,6 +601,12 @@
     "@id" : "http://www.IT4Commerce.com#Produit_cosmétique_poue_homme"
   } ]
 }, {
+  "@id" : "http://www.IT4Commerce.com#Prénom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Client"
+  } ]
+}, {
   "@id" : "http://www.IT4Commerce.com#Rayondebijouterie",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -527,6 +656,12 @@
     "@id" : "http://www.IT4Commerce.com#Vetement_pour_homme"
   } ]
 }, {
+  "@id" : "http://www.IT4Commerce.com#Tel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#Compte"
+  } ]
+}, {
   "@id" : "http://www.IT4Commerce.com#Tissu",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -573,6 +708,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.IT4Commerce.com#Vetement"
+  } ]
+}, {
+  "@id" : "http://www.IT4Commerce.com#Ville",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.IT4Commerce.com#AgenceLa_Poste"
   } ]
 }, {
   "@id" : "http://www.IT4Commerce.com#adresseLivraison",

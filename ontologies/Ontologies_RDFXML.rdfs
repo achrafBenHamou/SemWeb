@@ -1,0 +1,1203 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.IT4Commerce.com"
+     xml:base="http://www.IT4Commerce.com"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.IT4Commerce.com"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.IT4Commerce.com#Associé -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#Associé">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Bracelet"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Boucled&apos;oreille"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Contient -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#Contient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Regroupé-selon -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#Regroupé-selon">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#collier"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Boucled&apos;oreille"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Couleur"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Tissu"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#ajoute -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#ajoute">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Client"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Commande"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#article -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#article">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#SiteEcommerce"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Article"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#compose -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#compose">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Tout-en-un"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Clavier"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Ecran"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Souris"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#compte -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#compte">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Client"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Compte"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#ligne -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#ligne">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Panier"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#LigneCommande"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#panier -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#panier">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Compte"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Panier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#passe -->
+
+    <owl:ObjectProperty rdf:about="http://www.IT4Commerce.com#passe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Commande"/>
+        <rdfs:range rdf:resource="http://www.IT4Commerce.com#Client"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.IT4Commerce.com#ModeLivraison -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#ModeLivraison">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Commande"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#ModePayement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#ModePayement">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Commande"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#adresseLivraison -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#adresseLivraison">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Commande"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#caracteristique -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#caracteristique">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#categorie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#categorie">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Bijouxpiercing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#colliD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#colliD">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#couleur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#couleur">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Vetement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Commande"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#date_expiration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#date_expiration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Boisson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Article"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Bijouxdecorps"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#email">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Compte"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Article"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Commande"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Compte"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#libelle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#libelle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Article"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#LigneCommande"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#marque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#marque">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Cosmetique"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Ordinateur"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Periphérique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#montant -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#montant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Panier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#motDePasse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#motDePasse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Client"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Bijouxdecorps"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Bjouxdetete"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#nom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Client"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#prenom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#prenom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Client"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#prix -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#prix">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Article"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#pt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#pt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#LigneCommande"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#pu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#pu">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#LigneCommande"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#quantite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#quantite">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#LigneCommande"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#statut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#statut">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#tel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#tel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Compte"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.IT4Commerce.com#url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.IT4Commerce.com#url">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#SiteEcommerce"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.IT4Commerce.com#Vetement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.IT4Commerce.com#Accessoire -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Accessoire">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Adresse -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Adresse">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Client"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#AdresseAgenceLaPoste -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#AdresseAgenceLaPoste">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#AgenceLa_Poste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#AdresseLivraison -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#AdresseLivraison">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Commande"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#AgenceLa_Poste -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#AgenceLa_Poste"/>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Aliment -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Aliment">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Article -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Article"/>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Bague -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Bague">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Bijouxdecorps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Bijouxdecorps -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Bijouxdecorps">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Rayondebijouterie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Bijouxpiercing -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Bijouxpiercing">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Bjouxdetete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Bjouxdetete -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Bjouxdetete">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Rayondebijouterie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Boisson -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Boisson">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Aliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Bracelet -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Bracelet">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Bijouxdecorps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Broche -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Broche">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Bijouxdecorps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Casque -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Casque">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Periphérique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Chemise -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Chemise">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement_pour_femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement_pour_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Clavier -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Clavier">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Periphérique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Client -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Client"/>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Commande -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Commande"/>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Compte -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Compte"/>
+    
+
+
+    <!-- http://www.IT4Commerce.com#CompteClient -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#CompteClient">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Client"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Cosmetique -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Cosmetique">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Couleur -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Couleur">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Rayondebijouterie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Date -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Date">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Commande"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#DélaiLivraison -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#DélaiLivraison">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Commande"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Ecran -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Ecran">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Periphérique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Electronique -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Electronique">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Email -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Email">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Client"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#EmailCompte -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#EmailCompte">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Compte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Fruit -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Fruit">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Aliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Fruit_de_mer -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Fruit_de_mer">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Fruit_frais -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Fruit_frais">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Fruit_sec -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Fruit_sec">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Gammebijoux -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Gammebijoux">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Bracelet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#ID -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#ID">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#AgenceLa_Poste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#IDCommande -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#IDCommande">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Commande"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#IDCompte -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#IDCompte">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Compte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Jupe -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Jupe">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement_pour_femme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Jus -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Jus">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Boisson"/>
+        <owl:disjointWith rdf:resource="http://www.IT4Commerce.com#Limonade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Latitude -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Latitude">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#AgenceLa_Poste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Legume -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Legume">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Aliment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#LigneCommande -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#LigneCommande"/>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Limonade -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Limonade">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Boisson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#ListSouhait -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#ListSouhait">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Compte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Longitude -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Longitude">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#AgenceLa_Poste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Micro -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Micro">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Periphérique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#ModePaiement -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#ModePaiement">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Commande"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#MontantTotal -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#MontantTotal">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Commande"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Montrebracelet -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Montrebracelet">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Bijouxdecorps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#MotDePasse -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#MotDePasse">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Compte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Nom -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Nom">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Client"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#NomAgenceLaPoste -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#NomAgenceLaPoste">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#AgenceLa_Poste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Ordinateur -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Ordinateur">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Electronique"/>
+        <owl:disjointWith rdf:resource="http://www.IT4Commerce.com#Periphérique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#PC-Bureau -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#PC-Bureau">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Ordinateur"/>
+        <owl:disjointWith rdf:resource="http://www.IT4Commerce.com#PC-Portable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#PC-Portable -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#PC-Portable">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Ordinateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Panier -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Panier"/>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Paniercompte -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Paniercompte">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Compte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Pantalon -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Pantalon">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement_pour_femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement_pour_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Parfumerie -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Parfumerie">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Produit_cosmétique_poue_femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Produit_cosmétique_poue_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Periphérique -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Periphérique">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Electronique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Produit_capillaire -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Produit_capillaire">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Produit_cosmétique_poue_femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Produit_cosmétique_poue_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Produit_cosmétique_poue_femme -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Produit_cosmétique_poue_femme">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Cosmetique"/>
+        <owl:disjointWith rdf:resource="http://www.IT4Commerce.com#Produit_cosmétique_poue_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Produit_cosmétique_poue_homme -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Produit_cosmétique_poue_homme">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Cosmetique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Produit_pour_la_peau -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Produit_pour_la_peau">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Produit_cosmétique_poue_femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Produit_cosmétique_poue_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Prénom -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Prénom">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Client"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Rayondebijouterie -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Rayondebijouterie">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Accessoire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Robe -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Robe">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement_pour_femme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Short -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Short">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement_pour_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#SiteEcommerce -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#SiteEcommerce"/>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Souris -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Souris">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Periphérique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#T-shirt -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#T-shirt">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement_pour_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Tel -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Tel">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Compte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Tissu -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Tissu">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Rayondebijouterie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Tout-en-un -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Tout-en-un">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#PC-Bureau"/>
+        <owl:disjointWith rdf:resource="http://www.IT4Commerce.com#UC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Tricot -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Tricot">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement_pour_femme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#UC -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#UC">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#PC-Bureau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Vetement -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Vetement">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Vetement_pour_femme -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Vetement_pour_femme">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement"/>
+        <owl:disjointWith rdf:resource="http://www.IT4Commerce.com#Vetement_pour_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Vetement_pour_homme -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Vetement_pour_homme">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Vetement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Ville -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Ville">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#AgenceLa_Poste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#collier -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#collier">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Bjouxdetete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Boucled&apos;oreille -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Boucled&apos;oreille">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Bjouxdetete"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.IT4Commerce.com#Produit_d&apos;hygiène -->
+
+    <owl:Class rdf:about="http://www.IT4Commerce.com#Produit_d&apos;hygiène">
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Produit_cosmétique_poue_femme"/>
+        <rdfs:subClassOf rdf:resource="http://www.IT4Commerce.com#Produit_cosmétique_poue_homme"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Accessoire"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Aliment"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Cosmetique"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Electronique"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Vetement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Article"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Client"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Commande"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Compte"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#LigneCommande"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Panier"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#SiteEcommerce"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Bague"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Bracelet"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Broche"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Montrebracelet"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Bijouxdecorps"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Bjouxdetete"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Couleur"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Tissu"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Bijouxpiercing"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#collier"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Boucled&apos;oreille"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Boisson"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Fruit"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Legume"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Casque"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Clavier"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Micro"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Souris"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Chemise"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Jupe"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Pantalon"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Robe"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Tricot"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Chemise"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Pantalon"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Short"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#T-shirt"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Fruit_de_mer"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Fruit_frais"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Fruit_sec"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Parfumerie"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Produit_capillaire"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Produit_pour_la_peau"/>
+            <rdf:Description rdf:about="http://www.IT4Commerce.com#Produit_d&apos;hygiène"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+
+

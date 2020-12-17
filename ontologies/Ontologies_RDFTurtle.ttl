@@ -1,4 +1,4 @@
-@prefix : <http://www.IT4Commerce.com#> .
+@prefix : <http://www.IT4Commerce.com> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -293,6 +293,25 @@ owl:topDataProperty rdfs:domain :Vetement ;
             rdfs:subClassOf :Article .
 
 
+###  http://www.IT4Commerce.com#Adresse
+:Adresse rdf:type owl:Class ;
+         rdfs:subClassOf :Client .
+
+
+###  http://www.IT4Commerce.com#AdresseAgenceLaPoste
+:AdresseAgenceLaPoste rdf:type owl:Class ;
+                      rdfs:subClassOf :AgenceLa_Poste .
+
+
+###  http://www.IT4Commerce.com#AdresseLivraison
+:AdresseLivraison rdf:type owl:Class ;
+                  rdfs:subClassOf :Commande .
+
+
+###  http://www.IT4Commerce.com#AgenceLa_Poste
+:AgenceLa_Poste rdf:type owl:Class .
+
+
 ###  http://www.IT4Commerce.com#Aliment
 :Aliment rdf:type owl:Class ;
          rdfs:subClassOf :Article .
@@ -365,6 +384,11 @@ owl:topDataProperty rdfs:domain :Vetement ;
 :Compte rdf:type owl:Class .
 
 
+###  http://www.IT4Commerce.com#CompteClient
+:CompteClient rdf:type owl:Class ;
+              rdfs:subClassOf :Client .
+
+
 ###  http://www.IT4Commerce.com#Cosmetique
 :Cosmetique rdf:type owl:Class ;
             rdfs:subClassOf :Article .
@@ -375,6 +399,16 @@ owl:topDataProperty rdfs:domain :Vetement ;
          rdfs:subClassOf :Rayondebijouterie .
 
 
+###  http://www.IT4Commerce.com#Date
+:Date rdf:type owl:Class ;
+      rdfs:subClassOf :Commande .
+
+
+###  http://www.IT4Commerce.com#DélaiLivraison
+:DélaiLivraison rdf:type owl:Class ;
+                rdfs:subClassOf :Commande .
+
+
 ###  http://www.IT4Commerce.com#Ecran
 :Ecran rdf:type owl:Class ;
        rdfs:subClassOf :Periphérique .
@@ -383,6 +417,16 @@ owl:topDataProperty rdfs:domain :Vetement ;
 ###  http://www.IT4Commerce.com#Electronique
 :Electronique rdf:type owl:Class ;
               rdfs:subClassOf :Article .
+
+
+###  http://www.IT4Commerce.com#Email
+:Email rdf:type owl:Class ;
+       rdfs:subClassOf :Client .
+
+
+###  http://www.IT4Commerce.com#EmailCompte
+:EmailCompte rdf:type owl:Class ;
+             rdfs:subClassOf :Compte .
 
 
 ###  http://www.IT4Commerce.com#Fruit
@@ -410,6 +454,21 @@ owl:topDataProperty rdfs:domain :Vetement ;
              rdfs:subClassOf :Bracelet .
 
 
+###  http://www.IT4Commerce.com#ID
+:ID rdf:type owl:Class ;
+    rdfs:subClassOf :AgenceLa_Poste .
+
+
+###  http://www.IT4Commerce.com#IDCommande
+:IDCommande rdf:type owl:Class ;
+            rdfs:subClassOf :Commande .
+
+
+###  http://www.IT4Commerce.com#IDCompte
+:IDCompte rdf:type owl:Class ;
+          rdfs:subClassOf :Compte .
+
+
 ###  http://www.IT4Commerce.com#Jupe
 :Jupe rdf:type owl:Class ;
       rdfs:subClassOf :Vetement_pour_femme .
@@ -419,6 +478,11 @@ owl:topDataProperty rdfs:domain :Vetement ;
 :Jus rdf:type owl:Class ;
      rdfs:subClassOf :Boisson ;
      owl:disjointWith :Limonade .
+
+
+###  http://www.IT4Commerce.com#Latitude
+:Latitude rdf:type owl:Class ;
+          rdfs:subClassOf :AgenceLa_Poste .
 
 
 ###  http://www.IT4Commerce.com#Legume
@@ -435,14 +499,49 @@ owl:topDataProperty rdfs:domain :Vetement ;
           rdfs:subClassOf :Boisson .
 
 
+###  http://www.IT4Commerce.com#ListSouhait
+:ListSouhait rdf:type owl:Class ;
+             rdfs:subClassOf :Compte .
+
+
+###  http://www.IT4Commerce.com#Longitude
+:Longitude rdf:type owl:Class ;
+           rdfs:subClassOf :AgenceLa_Poste .
+
+
 ###  http://www.IT4Commerce.com#Micro
 :Micro rdf:type owl:Class ;
        rdfs:subClassOf :Periphérique .
 
 
+###  http://www.IT4Commerce.com#ModePaiement
+:ModePaiement rdf:type owl:Class ;
+              rdfs:subClassOf :Commande .
+
+
+###  http://www.IT4Commerce.com#MontantTotal
+:MontantTotal rdf:type owl:Class ;
+              rdfs:subClassOf :Commande .
+
+
 ###  http://www.IT4Commerce.com#Montrebracelet
 :Montrebracelet rdf:type owl:Class ;
                 rdfs:subClassOf :Bijouxdecorps .
+
+
+###  http://www.IT4Commerce.com#MotDePasse
+:MotDePasse rdf:type owl:Class ;
+            rdfs:subClassOf :Compte .
+
+
+###  http://www.IT4Commerce.com#Nom
+:Nom rdf:type owl:Class ;
+     rdfs:subClassOf :Client .
+
+
+###  http://www.IT4Commerce.com#NomAgenceLaPoste
+:NomAgenceLaPoste rdf:type owl:Class ;
+                  rdfs:subClassOf :AgenceLa_Poste .
 
 
 ###  http://www.IT4Commerce.com#Ordinateur
@@ -464,6 +563,11 @@ owl:topDataProperty rdfs:domain :Vetement ;
 
 ###  http://www.IT4Commerce.com#Panier
 :Panier rdf:type owl:Class .
+
+
+###  http://www.IT4Commerce.com#Paniercompte
+:Paniercompte rdf:type owl:Class ;
+              rdfs:subClassOf :Compte .
 
 
 ###  http://www.IT4Commerce.com#Pantalon
@@ -506,6 +610,11 @@ owl:topDataProperty rdfs:domain :Vetement ;
                                       :Produit_cosmétique_poue_homme .
 
 
+###  http://www.IT4Commerce.com#Prénom
+:Prénom rdf:type owl:Class ;
+        rdfs:subClassOf :Client .
+
+
 ###  http://www.IT4Commerce.com#Rayondebijouterie
 :Rayondebijouterie rdf:type owl:Class ;
                    rdfs:subClassOf :Accessoire .
@@ -533,6 +642,11 @@ owl:topDataProperty rdfs:domain :Vetement ;
 ###  http://www.IT4Commerce.com#T-shirt
 :T-shirt rdf:type owl:Class ;
          rdfs:subClassOf :Vetement_pour_homme .
+
+
+###  http://www.IT4Commerce.com#Tel
+:Tel rdf:type owl:Class ;
+     rdfs:subClassOf :Compte .
 
 
 ###  http://www.IT4Commerce.com#Tissu
@@ -570,6 +684,11 @@ owl:topDataProperty rdfs:domain :Vetement ;
 ###  http://www.IT4Commerce.com#Vetement_pour_homme
 :Vetement_pour_homme rdf:type owl:Class ;
                      rdfs:subClassOf :Vetement .
+
+
+###  http://www.IT4Commerce.com#Ville
+:Ville rdf:type owl:Class ;
+       rdfs:subClassOf :AgenceLa_Poste .
 
 
 ###  http://www.IT4Commerce.com#collier
