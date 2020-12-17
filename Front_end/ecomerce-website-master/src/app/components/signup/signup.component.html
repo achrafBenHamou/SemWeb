@@ -62,7 +62,7 @@
               </span>
               <div class="text-danger" *ngIf="(email.errors?.required && email.touched)||(signUpForm.submitted && email.errors?.required)">
                 Email is required</div>
-              <div class="text-danger" *ngIf="email.errors?.pattern && email.touched">Invalid email</div>
+              <div class="text-danger" *ngIf="email.errors?.pattern && email.touched">Email invalide</div>
             </div>
           </div>
         </div>
@@ -73,13 +73,13 @@
                 <input type="password" placeholder="Password" class="input-format-small" name="password" (input)="confirmPassword.control.updateValueAndValidity()"
                   #password="ngModel" [(ngModel)]="userSignup.password" minlength="6" required [ngClass]="{'input-format-small-error': (password.errors && password.touched)||(signUpForm.submitted && password.errors), 'mt-4': password.errors?.required, 'mt-0': !password.errors?.required}">
                 <label for="" *ngIf="!password.errors?.required" [ngClass]="password.errors && password.touched ? 'label-format-error' : 'label-format'"
-                  class="label-format">Password</label>
+                  class="label-format">Mot de passe </label>
               </span>
               <span *ngIf="(password.errors?.required && password.touched)||(password.errors?.required && signUpForm.submitted)" class="text-danger">
-                password is required
+                Mot de passe requis
               </span>
               <span class="text-danger" *ngIf="(password.errors?.minlength && password.touched)||(password.errors?.minlength && signUpForm.submitted &&!password.errors?.required)">
-                Must be at least 6 characters
+                Doit être au moins 6 caractères
               </span>
             </div>
           </div>
@@ -89,15 +89,15 @@
                 <input type="password" placeholder="Confirm password" class="input-format-small" name="confirmPassword" #confirmPassword="ngModel"
                   [(ngModel)]="userSignup.confirmPassword" appConfirmPassword="password" required [ngClass]="{'input-format-small-error': (confirmPassword.errors && confirmPassword.touched)||(signUpForm.submitted && confirmPassword.errors), 'mt-4': confirmPassword.errors?.required, 'mt-0': !confirmPassword.errors?.required}">
                 <label for="" *ngIf="!confirmPassword.errors?.required" [ngClass]="confirmPassword.errors && confirmPassword.touched ? 'label-format-error' : 'label-format'"
-                  class="label-format">Confirm password</label>
+                  class="label-format">Confirmez le mot de passe</label>
               </span>
               <span *ngIf="(confirmPassword.errors?.required && confirmPassword.touched)||(confirmPassword.errors?.required && signUpForm.submitted)"
                 class="text-danger">
-                Confirm password is required
+                Confirmer le mot de passe est requis
               </span>
               <span *ngIf="(confirmPassword.errors?.notEqual && confirmPassword.touched && !confirmPassword.errors?.required)||(confirmPassword.errors?.notEqual && signUpForm.submitted && !confirmPassword.errors?.required)"
                 class="text-danger">
-                passwords do not match
+                Les mots de passe ne correspondent pas
               </span>
             </div>
           </div>
@@ -111,7 +111,7 @@
         <div class="row mt-3">
           <div class="col-12">
             <button class="btn btn-block bg-warning font-weight-bold">
-              <i class="fa fa-pencil text-dark"></i> submit
+              <i class="fa fa-pencil text-dark"></i> soumettre
             </button>
           </div>
         </div>

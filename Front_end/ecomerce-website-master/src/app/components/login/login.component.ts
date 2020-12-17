@@ -24,8 +24,8 @@ export class LoginComponent implements OnInit {
     
     //will use this object to do a two way data binding with the html login form
     this.login = {
-      username: "",
-      password: ""
+      username: "achraf@gmail.com",
+      password: "achraf"
     }
   }
 

@@ -7,7 +7,7 @@
   <!-- div containing the login form -->
   <div *ngIf="!isLoading" class="container align-self-center card p-0 my-3" style="min-width:230px; max-width: 410px;">
     <div class="card-header bg-warning text-center font-weight-bold">
-      Sign-in
+      Connexion
     </div>
     <!-- the text fiels and labels are contain here and i did some form validation client side to ensure data validity before sending request to my backend -->
     <div class="card-body">
@@ -18,22 +18,22 @@
           <input type="text" name="username" class="form-control" style="height:28px;" [(ngModel)]="login.username" #username="ngModel"
             pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required [ngClass]="{'is-invalid': (username.errors && loginForm.submitted)}">
           <span *ngIf="(username.errors?.required && loginForm.submitted)" class="text-danger">
-            Email is required
+            Email est requis
           </span>
           <span class="text-danger" *ngIf="(username.errors?.pattern && loginForm.submitted &&!username.errors?.required)">
-            Invalid email
+            Email invalide
           </span>
         </div>
         <div class="form-group">
           <label for="">
-            <i class="fa fa-eye"></i> Password</label>
+            <i class="fa fa-eye"></i> Mot de passe</label>
           <input type="password" name="password" class="form-control" style="height:28px;" [(ngModel)]="login.password" #password="ngModel"
             minlength="6" required [ngClass]="{'is-invalid': (password.errors && loginForm.submitted)}">
           <span *ngIf="(password.errors?.required && loginForm.submitted)" class="text-danger">
             password is required
           </span>
           <span class="text-danger" *ngIf="(password.errors?.minlength && loginForm.submitted &&!password.errors?.required)">
-            Invalid password
+            Mot de passe incorrect
           </span>
         </div>
         <!-- display errors from backend -->
@@ -42,13 +42,13 @@
         </div>
         <div class="mt-3">
           <button class="btn btn-block text-dark bg-warning font-weight-bold">
-            <i class="fa fa-lock text-dark"></i> Login
+            <i class="fa fa-lock text-dark"></i> Connecter
           </button>
         </div>
       </form>
       <hr>
       <div class="d-flex justify-content-end">
-        <button class="btn btn-block" routerLink="/signup">sign-up</button>
+        <button class="btn btn-block" routerLink="/signup">s'inscrire</button>
       </div>      
     </div>
   </div>

@@ -11,22 +11,22 @@
       <div class="container-fluid d-flex flex-column">
         <label for="" class="font-weight-bold"> Condition</label>
         <span>
-          <input type="checkbox" id="new" (change)="filterCondition()"> New</span>
+          <input type="checkbox" id="new" (change)="filterCondition()"> Nouveau</span>
         <span>
-          <input type="checkbox" id="used" (change)="filterCondition()"> Used</span>
+          <input type="checkbox" id="used" (change)="filterCondition()"> Utilisé</span>
       </div>
 
       <div class="container-fluid d-flex flex-column mt-4">
         <label for="" class="font-weight-bold"> Item Ships</label>
         <span>
-          <input type="checkbox" id="usOnly" (change)="filterCondition()"> USA</span>
+          <input type="checkbox" id="usOnly" (change)="filterCondition()"> France</span>
         <span>
-          <input type="checkbox" id="worldWide" (change)="filterCondition()"> World Wide</span>
+          <input type="checkbox" id="worldWide" (change)="filterCondition()"> À l'échelle mondiale</span>
       </div>
       <div class="container-fluid d-flex flex-column mt-4">
-        <label for="" class="font-weight-bold"> Category</label>
+        <label for="" class="font-weight-bold"> Catégorie</label>
         <span>
-          <input type="radio" name="category" id="watch" (change)="filterCondition()"> Watch
+          <input type="radio" name="category" id="watch" (change)="filterCondition()"> montre
         </span>
         <span>
           <input type="radio" name="category" id="furniture" (change)="filterCondition()"> Furniture
@@ -39,7 +39,7 @@
         </span>
       </div>
       <div class="container-fluid mt-3">
-        <button class="btn btn-dark text-warning" (click)="clearFilters()">Clear</button>
+        <button class="btn btn-dark text-warning" (click)="clearFilters()">Supprimer</button>
       </div>
 
     </div>
@@ -50,14 +50,14 @@
         <div class="container-fluid d-flex justify-content-end">
           <label for="" class="mr-3 mt-2">Sort: </label>
           <select name="" id="" [(ngModel)]="comboPriceModel" (ngModelChange)="sortComboBox($event)">
-            <option value="lowToHigh"> lowest to highest Price</option>
-            <option value="highToLow"> Highest to lowest Price</option>
+            <option value="lowToHigh"> Prix ​​du plus bas au plus élevé</option>
+            <option value="highToLow"> Prix ​​du plus élevé au plus bas</option>
           </select>
         </div>
       </div>
       <!-- this card body contains img of the deals and text description -->
       <div class="w-100 card-body p-0" style="overflow-y: auto; overflow-x:auto;">
-        <div class="container-fluid text-center mt-3" *ngIf="lengthArrFilter == 0">Item does not exist</div>
+        <div class="container-fluid text-center mt-3" *ngIf="lengthArrFilter == 0">L'élément n'existe pas</div>
         <button class="w-100 btn btn-link card d-flex flex-row p-0 btn-card border" *ngFor="let myArr of filteredArr" (click)="openPopupDialog(myArr)"
           style="cursor: pointer; min-width: 400px;">
           <!-- div contains img  -->
@@ -68,10 +68,10 @@
           <div class="col-8 bg-white h-100 align-self-center">
             <span class="text-title text-secondary">{{myArr.titleItem}}</span>
             <br>
-            <span class="text-price text-success">Price: {{myArr.price| currency:'USD':'symbol':'2.2'}}</span>
+            <span class="text-price text-success">Prix: {{myArr.price| currency:'USD':'symbol':'2.2'}}</span>
             <br>
             <!-- using the logic below to displayed crossed old price only in case of a promotion -->
-            <span class="text-danger text-other" *ngIf="myArr.price != myArr.oldPrice">Was:
+            <span class="text-danger text-other" *ngIf="myArr.price != myArr.oldPrice">Était:
               <span style="text-decoration: line-through">{{myArr.oldPrice| currency:'USD':'symbol':'2.2'}}
               </span>
             </span>
@@ -79,10 +79,10 @@
             <!-- here all i am doing change the text display depending on if the item -->
             <!-- ships in the us only or world wide -->
             <span *ngIf="myArr.itemShippingOption == 'US'" class="text-other">
-              Item ships to: {{myArr.itemShippingOption}}
+              L'article est expédié à: {{myArr.itemShippingOption}}
             </span>
             <span *ngIf="myArr.itemShippingOption != 'US'" class="text-other text-dark">
-              Item ships: {{myArr.itemShippingOption}}
+              Articles expédiés: {{myArr.itemShippingOption}}
             </span>
             <br>
             <span class="text-dark text-other">
@@ -90,7 +90,7 @@
             </span>
             <br>
             <span class="text-dark text-other">
-              Gender: {{myArr.Gender}}
+              Le sexe: {{myArr.Gender}}
             </span>
 
           </div>

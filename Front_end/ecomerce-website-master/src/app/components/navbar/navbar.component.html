@@ -4,7 +4,7 @@
   <div class="container-fluid">
     <!-- title of the site -->
     <div class="col-3 p-0">
-      <a class="text-white text-title-nav font-weight-bold" routerLink="deals">Deal Site</a>
+      <a class="text-white text-title-nav font-weight-bold" routerLink="deals">IT4Commerce</a>
     </div>
     <!-- search box -->
     <div class="col-md-6 col-9">
@@ -27,16 +27,16 @@
     <ul class="w-100 d-flex flex-row justify-content-center">
       <li class="dropdown hideBulletLi" *ngIf="isAuthenticated">
         <button class="btn btn-link text-white font-weight-bold  nav-btn btn-text dropdown-toggle" data-toggle="dropdown">
-          <span class="small">hello, {{firstName}}</span>
-          <br> Account & Lists
+          <span class="small">Bonjour, {{firstName}}</span>
+          <br> Compte et listes
         </button>
         <div class="dropdown-menu p-0">
           <button class="w-100 text-center btn btn-link text-dark hand-pointer" routerLink="orderhistory">
-            <i class="fa fa-cubes"></i> Order history
+            <i class="fa fa-cubes"></i>Historique des commandes
           </button>
           
           <button class="w-100 text-center btn btn-link text-dark hand-pointer" (click)="signout()">
-            <i class="fa fa-sign-out"></i> Sign out
+            <i class="fa fa-sign-out"></i> Déconnexion
           </button>
         </div>
       </li>

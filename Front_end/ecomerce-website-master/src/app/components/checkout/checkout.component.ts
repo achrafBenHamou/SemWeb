@@ -6,8 +6,9 @@ import { CheckoutForm } from '../../models/checkoutForm';
 import { CartModel } from '../../models/cartmodel';
 import { CognitoService } from '../../services/cognito.service';
 import { DynamodbService } from '../../services/dynamodb.service';
+import { BrowserModule } from '@angular/platform-browser';
 
-
+declare const L: any;
 
 @Component({
   selector: 'app-checkout',
@@ -88,7 +89,40 @@ export class CheckoutComponent implements OnInit {
     if (this.localStor.cartDataArr.length == 0) {
       this.cartIsEmptyBool = true;
     }
+    if (!navigator.geolocation) {
+      console.log('location is not supported');
+    }
+    navigator.geolocation.getCurrentPosition((position) => {
+      const coords = position.coords;
+      const latLong = [coords.latitude, coords.longitude];
+      console.log(
+        `lat: ${position.coords.latitude}, lon: ${position.coords.longitude}`
+      );
+      let mymap = L.map('map').setView(latLong, 13);
 
+      L.tileLayer(
+        'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWNocmFmYmVuaGFtb3UiLCJhIjoiY2tpc3kyZnJ3MHBneDJxc2NzbW9tZmRxdiJ9.4NzdG0WUPiqyxJg_5hZoyw',
+        {
+          attribution:
+            'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox/streets-v11',
+          tileSize: 512,
+          zoomOffset: -1,
+          accessToken: 'your.mapbox.access.token',
+        }
+      ).addTo(mymap);
+
+      let marker = L.marker(latLong).addTo(mymap);
+
+      marker.bindPopup('<b>you are here</b>').openPopup();
+
+      let popup = L.popup()
+        .setLatLng(latLong)
+        .setContent('I am here')
+        .openOn(mymap);
+    });
+    this.watchPosition();
     this.myCartArr = this.localStor.cartDataArr;
     this.calculateGrandTotal();
 
@@ -104,7 +138,7 @@ export class CheckoutComponent implements OnInit {
 
       }
     });
-
+ 
   }
   
   // This function gets 'todays' date and render it in the format MM/DD/YYYY
@@ -127,7 +161,30 @@ export class CheckoutComponent implements OnInit {
     fullDate = mm + '/' + dd + '/' + yyyy;
     return fullDate;
   }
-
+  watchPosition()
+  {
+    let desLat = 0;
+    let desLon = 0;
+    let id = navigator.geolocation.watchPosition(
+      (position) => {
+        console.log(
+          `lat: ${position.coords.latitude}, lon: ${position.coords.longitude}`
+        );
+        if (position.coords.latitude === desLat) {
+          navigator.geolocation.clearWatch(id);
+        }
+      },
+      (err) => {
+        console.log(err);
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0,
+      }
+    );
+    
+  }
   onSubmit({ value, valid }: { value: CheckoutForm, valid: boolean }) {
     this.emptyErrMsgArr();
 

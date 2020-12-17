@@ -1,3 +1,9 @@
+#map {
+  height: 60vh;
+  width: 80vh;
+  margin: auto;
+}
+
 .main-page{
   min-height: 100vh;
   position: relative;

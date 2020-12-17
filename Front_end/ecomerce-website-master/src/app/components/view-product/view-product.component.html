@@ -7,10 +7,10 @@
       <span class="h3 text-secondary">{{data.titleItem}}</span>
       <br>
       <br>
-      <span class="text-success h5">Price: {{data.price| currency:'USD':'symbol':'2.2'}}</span>
+      <span class="text-success h5">prix: {{data.price| currency:'EUR':'symbol':'2.2'}}</span>
       <br>
       <span class="text-danger" *ngIf="data.price != data.oldPrice">Was:
-        <span style="text-decoration: line-through">{{data.oldPrice| currency:'USD':'symbol':'2.2'}}
+        <span style="text-decoration: line-through">{{data.oldPrice| currency:'EUR':'symbol':'2.2'}}
         </span>
       </span>
       <br>
@@ -19,10 +19,10 @@
       </span>
       <br>
       <span *ngIf="data.itemShippingOption == 'US'">
-        Item ships to: {{data.itemShippingOption}} only
+       L'article est expédié à: {{data.itemShippingOption}} only
       </span>
       <span *ngIf="data.itemShippingOption != 'US'" class="text-dark">
-        Item ships: {{data.itemShippingOption}}
+        Articles expédiés: {{data.itemShippingOption}}
       </span>
       <br>
       <span class="text-dark">
@@ -34,7 +34,7 @@
       </span>
       <br>
       <span class="text-dark">
-        Return Policy: {{data.returnPolicy}}
+        Politique de retour:{{data.returnPolicy}}
       </span>
       <br>
       <br>
@@ -47,16 +47,16 @@
 
 
       <select class="w-100 align-self-center form-control" name="quant" id="quant" [(ngModel)]="quanty" (ngModelChange)="quantityComboChanged($event)">
-        <option value="choose">Quantity</option>
+        <option value="choose">Quantité</option>
         <option *ngFor="let quantity of quantityArrObj" [value]="quantity.value">{{quantity.text}}</option>
       </select>
-      <span class="text-danger text-center" *ngIf="err">Please select a quantity</span>
+      <span class="text-danger text-center" *ngIf="err">sélectionner la quantité</span>
 
 
     </div>
     <div class="container-fluid d-flex flex-sm-row flex-column justify-content-center mt-5">
       <button class="btn btn-dark mr-3 w-100 mb-3 mb-sm-0" (click)="addCart()">
-        <i class="fa fa-shopping-cart text-warning"> </i> add to cart</button>      
+        <i class="fa fa-shopping-cart text-warning"> </i> ajouter au panier</button>      
     </div>
   </div>
 </div>

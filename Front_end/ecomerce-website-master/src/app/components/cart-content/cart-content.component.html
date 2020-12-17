@@ -18,10 +18,10 @@
               QTY: {{myArr.quantity}}
             </div>
             <div class="col-12 h6 text-center">
-              {{myArr.finalPrice| currency:'USD':'symbol':'2.2'}}
+              {{myArr.finalPrice| currency:'EUR':'symbol':'2.2'}}
             </div>
             <div class="col-12 d-flex justify-content-center">
-              <button class="btn btn-link" (click)="removeData(myArr)">remove</button>
+              <button class="btn btn-link" (click)="removeData(myArr)">Supprimer</button>
             </div>
           </div>
 
@@ -31,20 +31,20 @@
     <!-- div has two buttons checkout and keep shopping and displays the total amount to pay -->
     <div class="container col-lg-4 col-12 mb-4">
       <div class="container-fluid p-0 card">
-        <button class="btn btn btn-success" routerLink="/checkout">Go to Checkout</button>
-        <button class="btn btn btn-dark" (click)="rerouteDealPage()">Keep shopping</button>
+        <button class="btn btn btn-success" routerLink="/checkout">Aller à la caisse</button>
+        <button class="btn btn btn-dark" (click)="rerouteDealPage()">Continuer vos achats</button>
       </div>
       <div class="card-footer bg-white text-center">
-        Total: {{grandTotal| currency:'USD':'symbol':'2.2'}}
+        Total: {{grandTotal| currency:'EUR':'symbol':'2.2'}}
       </div>
     </div>
   </div>
   <!-- div below is visible when cart is empty. displaye a message and has a button shop now which rerouts the user to the deals page. -->
   <div class="container-fluid align-self-center h2 text-center" *ngIf="cartIsEmpty">
-    Cart is Empty
+    Le panier est vide
     <br>
     <button class="btn btn-dark text-warning" (click)="rerouteDealPage()">
-      <i class="fa fa-shopping-cart text-warning"></i> Shop now</button>
+      <i class="fa fa-shopping-cart text-warning"></i>Achetez maintenant</button>
   </div>
 
 

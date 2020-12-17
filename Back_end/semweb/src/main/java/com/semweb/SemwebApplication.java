@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
 public class SemwebApplication {
+	public static void main(String[] args) {
+		SpringApplication.run(SemwebApplication.class, args);
+	}
 
 	@RequestMapping("/getClients")
 	public String getClients() {
@@ -15,6 +18,11 @@ public class SemwebApplication {
 	@RequestMapping("/getAgences")
 	public String getAgences() {
 		return "hello";
+	}
+	
+	@RequestMapping("/getPostes")
+	public String getPostes() {
+		return "Greetings from Spring Boot!";
 	}
 
 }
