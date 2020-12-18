@@ -19,7 +19,8 @@
 ### Second step
 - create Spring boot application for interaction with front end and fuseki triplestore
 ## Semantic web Front end application
-### template of IT4Commerce 
+### template of IT4Commerce
+- Construct and visualize object oriented systems using UML Class Diagram in Enterprise Architect
 - Template downloaded from https://github.com/malicksarrtwo/ecomerce-website
 ### using open street map
 - we used leaflet for map
