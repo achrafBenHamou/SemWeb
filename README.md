@@ -6,7 +6,7 @@
 - Java version : 15.0.1
 - apache jena fuseki : 3.16.0
 - Protégé : 5.5.0
-- Enterprise Architect :
+- Enterprise Architect : 13.0.1310
 
 
 ## first step
