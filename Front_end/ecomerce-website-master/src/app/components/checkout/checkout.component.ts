@@ -94,7 +94,7 @@ export class CheckoutComponent implements OnInit {
           accessToken: 'your.mapbox.access.token',
         }
       ).addTo(mymap);
-////////
+/////
       let marker = L.marker(latLong).addTo(mymap);
       this._httpClient.get('http://localhost:8080/getPostes?ville=ST ETIENNE').subscribe(data => {
         let someArray=data;

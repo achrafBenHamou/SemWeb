@@ -1,5 +1,5 @@
 package com.semweb;
-
+//
 import org.springframework.web.bind.annotation.RestController;
 
 import com.semweb.entrypoints.TriplestoreConnection;

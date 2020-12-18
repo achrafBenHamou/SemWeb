@@ -1,5 +1,5 @@
 package com.semweb.model.ontologies;
-///
+//
 public class Agence {
 String name;
 String ville;
