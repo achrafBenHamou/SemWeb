@@ -5,6 +5,7 @@
 - Apache Maven : 3.6.3
 - Java version : 15.0.1
 - apache jena fuseki : 3.16.0
+- Angular : 11.0.4
 - Protégé : 5.5.0
 - Enterprise Architect : 13.0.1310
 
