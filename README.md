@@ -1,10 +1,12 @@
 # Semantic web
 # Semantic Web Back end 
 ## used versions 
-spring boot : 2.4.1
-Apache Maven : 3.6.3
-Java version: 15.0.1
-apache jena fuseki : 3.16.0
+- spring boot : 2.4.1
+- Apache Maven : 3.6.3
+- Java version: 15.0.1
+- apache jena fuseki : 3.16.0
+- Protégé : 5.5.0
+
 
 ## first step
 ### setup a triplestore
