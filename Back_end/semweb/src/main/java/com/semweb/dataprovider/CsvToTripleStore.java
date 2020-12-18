@@ -16,7 +16,7 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdfconnection.RDFConnection;
 import org.apache.jena.rdfconnection.RDFConnectionFactory;
 import org.apache.jena.vocabulary.RDF;
-
+///
 public class CsvToTripleStore {
 
 	public static void main(String[] args) {

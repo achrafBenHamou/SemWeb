@@ -23,7 +23,7 @@ import org.apache.jena.rdfconnection.RDFConnectionFactory;
 import com.semweb.model.ontologies.Agence;
 
 import java.util.List;
-
+///
 
 public class Fuseki {
 

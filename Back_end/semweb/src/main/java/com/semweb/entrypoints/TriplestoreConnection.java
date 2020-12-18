@@ -1,7 +1,7 @@
 package com.semweb.entrypoints;
 
 import java.util.ArrayList;
-
+///
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
@@ -64,7 +64,7 @@ public static ArrayList<String> getAllAgences() {
 	 
 	 ArrayList<String> villes = new ArrayList<String>();
 	 
-			 QueryExecution qExec = conn.query("SELECT ?s ?p ?o where { ?s <http://somewhere/ville> ?o } limit 10") ;
+			 QueryExecution qExec = conn.query("SELECT ?s ?p ?o where { ?s <http://somewhere/ville> ?o }") ;
 			 ResultSet rs = qExec.execSelect() ;
 			 while(rs.hasNext()) {
 			     QuerySolution qs = rs.next() ;
