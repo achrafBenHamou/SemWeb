@@ -1,4 +1,5 @@
 <div class="container-fluid main-page">
+ 
   <!-- this is my spinner. when i am loading things this shows -->
   <div *ngIf="isLoading" class="container-fluid text-center pt-5">
     <i class="fa fa-spinner fa-spin" style="font-size:120px;"></i>
@@ -17,7 +18,7 @@
       </div>
 
       <div class="container-fluid d-flex flex-column mt-4">
-        <label for="" class="font-weight-bold"> Item Ships</label>
+        <label for="" class="font-weight-bold"> Navires d'articles </label>
         <span>
           <input type="checkbox" id="usOnly" (change)="filterCondition()"> France</span>
         <span>
@@ -25,18 +26,24 @@
       </div>
       <div class="container-fluid d-flex flex-column mt-4">
         <label for="" class="font-weight-bold"> Catégorie</label>
+        
+        
         <span>
-          <input type="radio" name="category" id="watch" (change)="filterCondition()"> montre
+          <input type="radio" name="category" id="car" (change)="filterCondition()"> Véhicules
         </span>
         <span>
-          <input type="radio" name="category" id="furniture" (change)="filterCondition()"> Furniture
+          <input type="radio" name="category" id="clothing" (change)="filterCondition()"> Vétements 
         </span>
         <span>
-          <input type="radio" name="category" id="car" (change)="filterCondition()"> Car
+          <input type="radio" name="category" id="furniture" (change)="filterCondition()"> Meuble 
         </span>
         <span>
-          <input type="radio" name="category" id="clothing" (change)="filterCondition()"> Clothing
+          <input type="radio" name="category" id="watch" (change)="filterCondition()"> Montres
         </span>
+        <span>
+          <input type="radio" name="category" id="car" (change)="filterCondition()"> Tout les produits  
+        </span>
+       
       </div>
       <div class="container-fluid mt-3">
         <button class="btn btn-dark text-warning" (click)="clearFilters()">Supprimer</button>
@@ -45,10 +52,10 @@
     </div>
     <!-- this div contains the deals and the combobox/select for sorting by price -->
     <div class="col-8 card p-0 my-5" *ngIf="!isLoading" style="min-width: 300px; max-width: 800px;">
-      <!-- this card header only contains the select that will sort prices -->
+      <!-- this card header only contains the select that will Trier prices -->
       <div class="card-header w-100">
         <div class="container-fluid d-flex justify-content-end">
-          <label for="" class="mr-3 mt-2">Sort: </label>
+          <label for="" class="mr-3 mt-2">Trier: </label>
           <select name="" id="" [(ngModel)]="comboPriceModel" (ngModelChange)="sortComboBox($event)">
             <option value="lowToHigh"> Prix ​​du plus bas au plus élevé</option>
             <option value="highToLow"> Prix ​​du plus élevé au plus bas</option>
