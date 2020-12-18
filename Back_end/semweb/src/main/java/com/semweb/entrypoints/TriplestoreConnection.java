@@ -1,5 +1,11 @@
 package com.semweb.entrypoints;
 
+import java.util.ArrayList;
+
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QuerySolution;
+import org.apache.jena.query.ResultSet;
+import org.apache.jena.rdf.model.Literal;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
@@ -7,6 +13,8 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdfconnection.RDFConnection;
 import org.apache.jena.rdfconnection.RDFConnectionFactory;
 import org.apache.jena.vocabulary.RDF;
+import com.semweb.model.ontologies.Agence;
+
 public class TriplestoreConnection {
     static String ex =  "http://www.it4commerce.com";
     static String geo = "http://www.w3.org/2003/01/geo/wgs84_pos#/";
@@ -46,5 +54,92 @@ public static boolean putClientData(String id,String nom,String prenom) {
     model.add(client,RDF.type,ex) ;
     return true;
 }
+
+public static ArrayList<String> getAllAgences() {
+	 String serviceURL = "http://localhost:3030/3a/";
+	 //String query = "SELECT (count(*) AS ?count) { ?s ?p ?o }" ;
+	    // See http://incubator.apache.org/jena/documentation/query/app_api.html
+	 RDFConnection conn = RDFConnectionFactory.connect(serviceURL);
+			 //conn.load("data.ttl") ;
+	 
+	 ArrayList<String> villes = new ArrayList<String>();
+	 
+			 QueryExecution qExec = conn.query("SELECT ?s ?p ?o where { ?s <http://somewhere/ville> ?o } limit 10") ;
+			 ResultSet rs = qExec.execSelect() ;
+			 while(rs.hasNext()) {
+			     QuerySolution qs = rs.next() ;
+			     Resource subject = qs.getResource("s") ;
+			     Literal o = qs.getLiteral("o");
+			     villes.add(o.toString());
+			     System.out.println("Literal: "+o) ;
+			 }
+			 System.out.println("villes: "+villes) ;
+			 qExec.close() ;
+			 conn.close() ;
+			 	return villes;
+}
+
+public static ArrayList<String> getAgence(String ville) {
+	 String serviceURL = "http://localhost:3030/3a/";
+	 //String query = "SELECT (count(*) AS ?count) { ?s ?p ?o }" ;
+	    // See http://incubator.apache.org/jena/documentation/query/app_api.html
+	 RDFConnection conn = RDFConnectionFactory.connect(serviceURL);
+			 //conn.load("data.ttl") ;
+	 
+	 ArrayList<String> agences = new ArrayList<String>();
+	 
+			 QueryExecution qExec = conn.query("SELECT ?s ?p ?poste where { ?s <http://somewhere/ville> \""+ville+"\".\r\n" + 
+			 		"      ?s <http://somewhere/poste_name> ?poste.\r\n" + 
+			 		"} ") ;
+			 ResultSet rs = qExec.execSelect() ;
+			 while(rs.hasNext()) {
+			     QuerySolution qs = rs.next() ;
+			     Resource subject = qs.getResource("s") ;
+			     Literal poste = qs.getLiteral("poste");
+			     agences.add(poste.toString());
+			     System.out.println("Literal: "+poste) ;
+			 }
+			 System.out.println("agences: "+agences) ;
+			 qExec.close() ;
+			 conn.close() ;
+			 	return agences;
+}
+
+public static ArrayList<Agence> getAgencesLatLong(String ville) {
+	 String serviceURL = "http://localhost:3030/3a/";
+	 //String query = "SELECT (count(*) AS ?count) { ?s ?p ?o }" ;
+	    // See http://incubator.apache.org/jena/documentation/query/app_api.html
+	 RDFConnection conn = RDFConnectionFactory.connect(serviceURL);
+			 //conn.load("data.ttl") ;	 
+	 ArrayList<Agence> agences = new ArrayList<Agence>();
+	 QueryExecution qExec = conn.query("SELECT ?s ?poste ?lat ?lon where { ?s <http://somewhere/ville> \""+ville+"\".\r\n" + 
+		 		"  ?s <http://somewhere/poste_lat> ?lat.\r\n" + 
+		 		"      ?s <http://somewhere/poste_name> ?poste.\r\n" + 
+		 		"  		\r\n" + 
+		 		"  		?s <http://somewhere/poste_lon> ?lon.\r\n" + 
+		 		"} ") ;
+			 ResultSet rs = qExec.execSelect() ;
+			 while(rs.hasNext()) {
+			     QuerySolution qs = rs.next() ;
+			     Resource subject = qs.getResource("s") ;
+			     Literal poste = qs.getLiteral("poste");
+			     String s_poste = qs.getLiteral("poste").toString();
+			     Literal lon = qs.getLiteral("lon") ;
+			     Literal lat = qs.getLiteral("lat");	
+			     String s_lon=lon.toString();
+			     String s_lat=lat.toString();
+			     //String str = "+123.4500d";
+			     double d_lon = Double.parseDouble(s_lon);
+			     double d_lat = Double.parseDouble(s_lat);
+			     Agence agence = new Agence(s_poste,ville,d_lon,d_lat);
+			     agences.add(agence);
+			     System.out.println("Literal: "+agence) ;
+			 }
+			 System.out.println("agences: "+agences) ;
+			 qExec.close() ;
+			 conn.close() ;
+			 	return agences;
+}
+
 
 }

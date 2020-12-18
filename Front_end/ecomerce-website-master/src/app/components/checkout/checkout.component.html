@@ -100,14 +100,19 @@
                 <!-- city -->
                 <div class="col-sm-4">
                   <div class="form-group">
-                    <span class="d-flex flex-column-reverse">
-                      <input type="text" class="input-format-small" placeholder="City" name="city" #city="ngModel" [(ngModel)]="checkout.city"
-                        required [ngClass]="{'input-format-small-error': ((city.errors && city.touched)||(city.errors && purchaseForm.submitted)), 'mt-4': city.errors?.required, 'mt-0': !city.errors?.required} "
-                        minlength="2" maxlength="50">
-                      <label for="" class="label-format" *ngIf="!city.errors?.required" [ngClass]="((city.errors && city.touched)||(city.errors && purchaseForm.submitted)) ? 'label-format-error' : 'label-format'">City</label>
+                    <span class="d-flex flex-column-reverse pt-1">
+                      <select name="states" id="states" appRequiredValidatorSelect="select" class="input-format-small" [(ngModel)]="checkout.states"
+                        #states="ngModel" [ngClass]="{'input-format-small-error': ((states.touched && states.errors?.defaultSelected)||(states.errors?.defaultSelected && purchaseForm.submitted)), 'mt-4': states.errors?.defaultSelected, 'mt-0': !states.errors?.defaultSelected}">
+                        <option value="select">Select City</option>
+                        <option *ngFor="let state of state" [value]="state.value">
+                          {{state.text}}
+                        </option>
+                      </select>
+                      <label for="" class="label-format" *ngIf="!states.errors?.defaultSelected" [ngClass]="((states.errors && states.touched)||(states.errors && purchaseForm.submitted)) ? 'label-format-error' : 'label-format'">State</label>
                     </span>
-                    <div *ngIf="((city.errors?.required && city.touched)||(city.errors?.required && purchaseForm.submitted))" class="text-danger">City is required</div>
-                    <div *ngIf="city.errors?.minlength && city.touched" class="text-danger">must be at least 2 characters</div>
+                    <div *ngIf="((states.errors?.defaultSelected && states.touched)||(states.errors?.defaultSelected && purchaseForm.submitted))"
+                      class="text-danger">*Please select a city
+                    </div>
                   </div>
                 </div>
                 <!-- state select -->
@@ -116,7 +121,7 @@
                     <span class="d-flex flex-column-reverse pt-1">
                       <select name="states" id="states" appRequiredValidatorSelect="select" class="input-format-small" [(ngModel)]="checkout.states"
                         #states="ngModel" [ngClass]="{'input-format-small-error': ((states.touched && states.errors?.defaultSelected)||(states.errors?.defaultSelected && purchaseForm.submitted)), 'mt-4': states.errors?.defaultSelected, 'mt-0': !states.errors?.defaultSelected}">
-                        <option value="select">Select State</option>
+                        <option value="select">Select Agence</option>
                         <option *ngFor="let state of state" [value]="state.value">
                           {{state.text}}
                         </option>
@@ -124,7 +129,7 @@
                       <label for="" class="label-format" *ngIf="!states.errors?.defaultSelected" [ngClass]="((states.errors && states.touched)||(states.errors && purchaseForm.submitted)) ? 'label-format-error' : 'label-format'">State</label>
                     </span>
                     <div *ngIf="((states.errors?.defaultSelected && states.touched)||(states.errors?.defaultSelected && purchaseForm.submitted))"
-                      class="text-danger">*Please select a state
+                      class="text-danger">*Please select a city
                     </div>
                   </div>
                 </div>

@@ -1,8 +1,13 @@
 package com.semweb;
 
+import java.util.ArrayList;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.semweb.entrypoints.TriplestoreConnection;
+import com.semweb.entrypoints.TriplestoreConnection.*;
 
 @SpringBootApplication
 public class SemwebApplication {
@@ -10,19 +15,5 @@ public class SemwebApplication {
 		SpringApplication.run(SemwebApplication.class, args);
 	}
 
-	@RequestMapping("/getClients")
-	public String getClients() {
-		return "Greetings from Spring Boot!";
-	}
-
-	@RequestMapping("/getAgences")
-	public String getAgences() {
-		return "hello";
-	}
-	
-	@RequestMapping("/getPostes")
-	public String getPostes() {
-		return "Greetings from Spring Boot!";
-	}
 
 }

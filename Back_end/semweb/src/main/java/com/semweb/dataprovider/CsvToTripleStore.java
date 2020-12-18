@@ -34,12 +34,13 @@ public class CsvToTripleStore {
 	        String rdfs = "http://www.w3.org/2000/01/rdf-schema#" ;
 	        String xsd =  "http://www.w3.org/2001/XMLSchema#" ;	        	        
 	        String poste_URI = "http://somewhere/";
-			Property poste_id = model.createProperty(ex+"poste_id");
-			Property poste_adress = model.createProperty(ex+"poste_adress");
-			Property poste_name = model.createProperty(ex+"poste_name");
+			Property poste_id = model.createProperty(poste_URI+"poste_id");
+			Property poste_adress = model.createProperty(poste_URI+"poste_adress");
+			Property poste_ville = model.createProperty(poste_URI+"ville");
+			Property poste_name = model.createProperty(poste_URI+"poste_name");
 			Property GeoSpacialLocation = model.createProperty(geo+"GeoSpacialLocation");
-			Property poste_lat = model.createProperty(ex+"poste_lat");
-			Property poste_lon = model.createProperty(ex+"poste_lon");
+			Property poste_lat = model.createProperty(poste_URI+"poste_lat");
+			Property poste_lon = model.createProperty(poste_URI+"poste_lon");
 	        try {
 
 	            br = new BufferedReader(new FileReader(csvFile));
@@ -52,12 +53,13 @@ public class CsvToTripleStore {
 							.addProperty(poste_id, ligne[0])
 								.addProperty(poste_name, ligne[1])
 								.addProperty(poste_adress, ligne[4])
+								.addProperty(poste_ville, ligne[8])
 									.addProperty(GeoSpacialLocation, 
 									model.createResource(poste_URI + ligne[0])
 									.addProperty(poste_lat, ligne[11])
 									.addProperty(poste_lon, ligne[12]));
 	                model.add(poste,RDF.type,GeoSpacialLocation) ;
-	               
+	                
 	                System.out.println("poste [poste_id= " + ligne[0] + " , poste_name=" + ligne[1] + " , poste_adresse=" + ligne[4] + " , poste_long=" + ligne[12]+" , poste_lat=" + ligne[12]+"]");
 	                
 	            }

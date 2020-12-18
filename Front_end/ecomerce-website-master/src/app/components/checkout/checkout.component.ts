@@ -7,6 +7,11 @@ import { CartModel } from '../../models/cartmodel';
 import { CognitoService } from '../../services/cognito.service';
 import { DynamodbService } from '../../services/dynamodb.service';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 
 declare const L: any;
 
@@ -16,75 +21,49 @@ declare const L: any;
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
-  state: ComboboxModel[] = [
-    { value: "AK", text: "Alaska" },
-    { value: "AL", text: "Alabama" },
-    { value: "AR", text: "Arkansas" },
-    { value: "AS", text: "American Samoa" },
-    { value: "AZ", text: "Arizona" },
-    { value: "CA", text: "California" },
-    { value: "CO", text: "Colorado" },
-    { value: "CT", text: "Connecticut" },
-    { value: "DC", text: "District of Columbia" },
-    { value: "DE", text: "Delaware" },
-    { value: "FL", text: "Florida" },
-    { value: "GA", text: "Georgia" },
-    { value: "GU", text: "Guam" },
-    { value: "HI", text: "Hawaii" },
-    { value: "IA", text: "Iowa" },
-    { value: "ID", text: "Idaho" },
-    { value: "IL", text: "Illinois" },
-    { value: "IN", text: "Indiana" },
-    { value: "KS", text: "Kansas" },
-    { value: "KY", text: "Kentucky" },
-    { value: "LA", text: "Louisiana" },
-    { value: "MA", text: "Massachusetts" },
-    { value: "MD", text: "Maryland" },
-    { value: "ME", text: "Maine" },
-    { value: "MI", text: "Michigan" },
-    { value: "MN", text: "Minnesota" },
-    { value: "MO", text: "Missouri" },
-    { value: "MS", text: "Mississippi" },
-    { value: "MT", text: "Montana" },
-    { value: "NC", text: "North Carolina" },
-    { value: "ND", text: "North Dakota" },
-    { value: "NE", text: "Nebraska" },
-    { value: "NH", text: "New Hampshire" },
-    { value: "NJ", text: "New Jersey" },
-    { value: "NM", text: "New Mexico" },
-    { value: "NV", text: "Nevada" },
-    { value: "NY", text: "New York" },
-    { value: "OH", text: "Ohio" },
-    { value: "OK", text: "Oklahoma" },
-    { value: "OR", text: "Oregon" },
-    { value: "PA", text: "Pennsylvania" },
-    { value: "PR", text: "Puerto Rico" },
-    { value: "RI", text: "Rhode Island" },
-    { value: "SC", text: "South Carolina" },
-    { value: "SD", text: "South Dakota" },
-    { value: "TN", text: "Tennessee" },
-    { value: "TX", text: "Texas" },
-    { value: "UT", text: "Utah" },
-    { value: "VA", text: "Virginia" },
-    { value: "VI", text: "Virgin Islands" },
-    { value: "VT", text: "Vermont" },
-    { value: "WA", text: "Washington" },
-    { value: "WI", text: "Wisconsin" },
-    { value: "WV", text: "West Virginia" },
-    { value: "WY", text: "Wyoming" }
-  ];
 
+  state: ComboboxModel[] = [
+  ];
+  Agences: ComboboxModel[] = [
+  ];
   checkout: CheckoutForm;
   cartIsEmptyBool: boolean = false;
   myCartArr: CartModel[] = [];
   grandTotal: string;
   showCongrats: boolean = false;
   errorMsgArr: string[] = [];
+  myGridOptions: any;
 
-  constructor(private localStor: LocalStorageService, private router: Router, private cognito: CognitoService, private dynamo: DynamodbService) { }
+  constructor(private localStor: LocalStorageService, private router: Router, private cognito: CognitoService, private dynamo: DynamodbService,private _httpClient: HttpClient) { }
 
   ngOnInit() {
+    this._httpClient.get('http://localhost:8080/getAgences').subscribe(data => {
+     let someArray=data;
+     const mapped = Object.keys(data).map(key => ({value: key, text: data[key]}));
+     
+     for (let entry of mapped){
+      //console.log(entry);
+      this.state.push(entry);
+      //console.log(this.state[0]);   
+      //console.log(entry[0]);
+    }
+    });
 
+    this._httpClient.get('http://localhost:8080/getPostes?ville=ST ETIENNE').subscribe(data => {
+      let someArray=data;
+      const mapped = Object.keys(data).map(key => ({value: key, text: data[key]}));
+      
+      for (let entry of mapped){
+       console.log(entry["text"]);
+       //value: CheckoutForm;
+       console.log()
+       this.Agences.push(entry);
+       //console.log(this.state[0]);   
+       //console.log(entry[0]);
+     }
+     });
+
+    //console.log(this.getAgences());
     // if the cart is empty, I set the boolean to true, and display in html template cart is empty.
     if (this.localStor.cartDataArr.length == 0) {
       this.cartIsEmptyBool = true;
@@ -95,6 +74,9 @@ export class CheckoutComponent implements OnInit {
     navigator.geolocation.getCurrentPosition((position) => {
       const coords = position.coords;
       const latLong = [coords.latitude, coords.longitude];
+
+
+
       console.log(
         `lat: ${position.coords.latitude}, lon: ${position.coords.longitude}`
       );
@@ -114,6 +96,28 @@ export class CheckoutComponent implements OnInit {
       ).addTo(mymap);
 
       let marker = L.marker(latLong).addTo(mymap);
+      this._httpClient.get('http://localhost:8080/getPostes?ville=ST ETIENNE').subscribe(data => {
+        let someArray=data;
+        const mapped = Object.keys(data).map(key => ({value: key, text: data[key]}));
+        for (let entry of mapped){
+          console.log("##############")
+         console.log(entry["text"]);
+         console.log(entry["text"]["lat"]);
+         let latLong2 =[entry["text"]["lat"],entry["text"]["lon"]]
+         console.log(latLong2)
+         console.log(latLong)
+         L.marker(latLong2).addTo(latLong2);
+         let popup = L.popup()
+         .setLatLng(latLong2)
+         .setContent('I am here')
+         .openOn(mymap);
+         //value: CheckoutForm;
+         console.log()
+         this.Agences.push(entry);
+         //console.log(this.state[0]);   
+         //console.log(entry[0]);
+       }
+       });
 
       marker.bindPopup('<b>you are here</b>').openPopup();
 
@@ -226,6 +230,14 @@ export class CheckoutComponent implements OnInit {
     }
   }
 
+  getAgences() {
+    this._httpClient.get('http://localhost:8080/getAgences').subscribe(data => {
+      return(data);
+    });
+  }
+
+
+ 
   // this function addup the prices for each item purchased and display the total of all items combined
   calculateGrandTotal() {
     var temp = 0;
