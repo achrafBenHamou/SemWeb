@@ -14,8 +14,7 @@
 ### Step 1 :Setup a triplestore 
 - Create Dataset named "3a" in jena fuseki
 - Define an ontolgie using Protégé and put it in the triplestore
-- Generate Data of La-Poste agencies automatically from existing data source
-  https://datanova.laposte.fr/explore/dataset/laposte_poincont2/download/?format=csv&timezone=Europe/Berlin&lang=fr&use_labels_for_header=true&csv_separator=%3B
+- Generate Data of La-Poste agencies automatically from existing data source https://datanova.laposte.fr/explore/dataset/laposte_poincont2/download/?format=csv&timezone=Europe/Berlin&lang=fr&use_labels_for_header=true&csv_separator=%3B
   the java file used for this transformation is https://github.com/achrafBenHamou/SemWeb/blob/main/Back_end/semweb/src/main/java/com/semweb/dataprovider/CsvToTripleStore.java
   
 ### Step 2 : Setup of the Back-end
@@ -35,3 +34,6 @@
 https://leafletjs.com/examples/quick-start/
 - Create access token for using the map
 https://account.mapbox.com/access-tokens/create
+
+### More informations
+for more informations you can read the project rapport https://drive.google.com/drive/folders/1J7oV2cakls4fKr9htEil-ccSMFGhQ7Yt?fbclid=IwAR1m4Cm0MxJ5yt3sUjZCJHHvxpqd0vNGW17c-ldqItjEneoUSIdAX4MR0To
