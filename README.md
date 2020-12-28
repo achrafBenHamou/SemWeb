@@ -7,14 +7,14 @@
 - npm : 6.14.8
 - Angular CLI version 11.0.4
 ## How to run project
-- run feseki server : execute fuseki-server file
-- run spring boot application : ./mvnw spring-boot:run
-- run angular application : ng serve
+- Run fuseki server : execute fuseki-server file
+- Run spring boot application : ./mvnw spring-boot:run
+- Run angular application : ng serve
 ## Building project
 ### Step 1 :Setup a triplestore 
-- Create Dataset named 3a in jena feseki
+- Create Dataset named "3a" in jena fuseki
 - Define an ontolgie using Protégé and put it in the triplestore
-- Generate Data of postes agencies automatically from existing data sources
+- Generate Data of La-Poste agencies automatically from existing data source
   https://datanova.laposte.fr/explore/dataset/laposte_poincont2/download/?format=csv&timezone=Europe/Berlin&lang=fr&use_labels_for_header=true&csv_separator=%3B
   the java file used for this transformation is https://github.com/achrafBenHamou/SemWeb/blob/main/Back_end/semweb/src/main/java/com/semweb/dataprovider/CsvToTripleStore.java
   
@@ -23,8 +23,8 @@
 - Back-end acrhitecture is based on three packages and two files :
   - dataprovider package: contains the public data used in the project and the file used for the transformation
   - entrypoint package: contains files used for connection with the triplestore, as well same SparQL Queries 
-  - ontologies package: contains files (ontologies) builded and generated with the software Protégé
-  - SemwebApplication.java file: For running the back end. it contains the http requests
+  - ontologies package: contains files (ontologies) builded and generated with the Protégé software 
+  - SemwebApplication.java : For running the back end, it contains the http requests
   - HelloController.java: contains http requests
   
 ### Step 3 : Semantic web Front-end application
