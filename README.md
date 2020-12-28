@@ -21,11 +21,11 @@
 ### Step 2 : Setup of the Back-end
 - Create Spring boot application as an internmediate between the Front-end and the fuseki triplestore
 - Back-end acrhitecture is based on three packages and two files :
-  -- dataprovider package: contains the public data used in the project and the file used for the transformation
-  -- entrypoint package: contains files used for connection with the triplestore, as well same SparQL Queries 
-  -- ontologies package: contains files (ontologies) builded and generated with the software Protégé
-  -- SemwebApplication.java file: For running the back end. it contains the http requests
-  -- HelloController.java: contains http requests
+  - dataprovider package: contains the public data used in the project and the file used for the transformation
+  - entrypoint package: contains files used for connection with the triplestore, as well same SparQL Queries 
+  - ontologies package: contains files (ontologies) builded and generated with the software Protégé
+  - SemwebApplication.java file: For running the back end. it contains the http requests
+  - HelloController.java: contains http requests
   
 ### Step 3 : Semantic web Front-end application
 #### Template of IT4Commerce 
